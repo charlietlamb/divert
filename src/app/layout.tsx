@@ -18,11 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          " relative flex min-h-screen w-full flex-col items-center justify-center bg-slate-900  text-slate-200",
+          " relative flex min-h-screen min-w-screen w-full flex-col items-center justify-center bg-slate-900  text-slate-200",
           GeistSans.className,
         )}
       >
-        <div className="bg-grid-white/[0.05] divide-y-white/[0.05] divide-y">
+        <div className="bg-grid-white/[0.05] divide-y-white/[0.05] divide-y w-full">
           <Nav />
           {children}
         </div>
