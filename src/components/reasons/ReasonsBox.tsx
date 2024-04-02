@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import React from "react";
+
 export default function ReasonsBox({
   title,
   text,
@@ -8,7 +11,13 @@ export default function ReasonsBox({
   index: number;
 }) {
   return (
-    <div className="relative flex flex-col gap-4 rounded-lg bg-slate-900 p-4 ring-4 ring-slate-900 ring-offset-2">
+    <motion.div
+      className="relative flex flex-col gap-4 rounded-lg bg-slate-900 p-4 ring-4 ring-slate-900 ring-offset-2"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: index * 0.4, duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="flex h-full items-center gap-4">
         <span className="text-8xl font-black text-slate-200">{index + 1}</span>
         <div className="relative inline-block w-fit gap-4 p-2">
@@ -18,6 +27,6 @@ export default function ReasonsBox({
           <p className="text-sm text-slate-400">{text}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

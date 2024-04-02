@@ -22,6 +22,7 @@ const buttonVariants = cva(
           "text-slate-900 border border-slate-900 bg-slate-200 hover:bg-slate-900 hover:text-slate-200 transition hover:shadow-md",
         slate_secondary:
           "text-slate-200 border border-slate-200 bg-transparent hover:bg-slate-200 hover:text-slate-900 transition hover:shadow-md",
+        toggle: "text-slate-200 bg-transparent transition duration-600",
       },
       size: {
         default: "h-10 px-4 py-2",

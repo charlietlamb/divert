@@ -1,7 +1,9 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import JourneyVector from "../custom/JourneyVector";
-import JourneyImage from "./JourneyImage";
 import { mainClass } from "@/data/mainClass";
+import { motion } from "framer-motion";
 
 export default function Journey() {
   return (
@@ -11,18 +13,36 @@ export default function Journey() {
         mainClass,
       )}
     >
-      <h4 className="max-w-[70%] text-center text-lg font-semibold text-blue-700">
+      <motion.h4
+        className="title-width text-center font-semibold text-blue-700 lg:text-lg"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         simplify the buying process and increase conversions
-      </h4>
-      <h2 className="max-w-[70%] text-center text-6xl font-bold text-slate-200">
+      </motion.h4>
+      <motion.h2
+        className="title-width title-size text-center text-6xl font-bold text-slate-200"
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Here&apos;s why you should use DIVERT landing pages
-      </h2>
-      <p className="max-w-[50%] text-center text-lg text-slate-400">
+      </motion.h2>
+      <motion.p
+        className="title-width text-center text-slate-400 lg:text-lg"
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Reduce the number of clicks in your customer&apos;s journey by up to
         70%! Once you try landing pages from DIVERT, you&apos;ll never return to
         the old way
-      </p>
-      <JourneyVector className="w-[70%] rounded-lg border-0 border-slate-700 bg-slate-900/50 p-4 hover:border-slate-200" />
+      </motion.p>
+      <JourneyVector className="w-full rounded-lg border-0 border-slate-700 p-4 hover:border-slate-200 sm:w-[90%] md:w-[80%] lg:w-[70%]" />
     </div>
   );
 }

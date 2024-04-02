@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import ResultsBox from "./ResultsBox";
 import { boxData } from "./data/boxData";
@@ -12,21 +15,39 @@ export default function Results() {
       )}
     >
       <div className="flex w-full flex-col items-center">
-        <span className="text-lg font-semibold text-blue-700">
+        <motion.span
+          className="text-lg font-semibold text-blue-700"
+          initial={{ opacity: 0, x: 500 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           It works, too
-        </span>
-        <h2 className="max-w-[50%] text-center text-6xl font-bold">
+        </motion.span>
+        <motion.h2
+          className="title-size title-width text-center font-bold"
+          initial={{ opacity: 0, x: -500 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           As you can see for yourself, we get results!
-        </h2>
+        </motion.h2>
       </div>
-      <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 lg:grid-cols-4">
         {boxData.map((box, i) => (
-          <ResultsBox key={i} {...box} />
+          <ResultsBox key={i} {...box} index={i} />
         ))}
       </div>
-      <p className="text-sm text-slate-600">
+      <motion.p
+        className="text-sm text-slate-600"
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Early customer data, results may vary.*
-      </p>
+      </motion.p>
     </div>
   );
 }

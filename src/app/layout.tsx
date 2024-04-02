@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Nav from "@/components/nav/Nav";
+import NextUIProviderClient from "@/components/providers/NextUIProviderClient";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,14 +19,16 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          " relative flex min-h-screen min-w-screen w-full flex-col items-center justify-center bg-slate-900  text-slate-200",
+          "debug-screens relative flex min-h-screen w-full flex-col items-center justify-center bg-slate-900 text-slate-200",
           GeistSans.className,
         )}
       >
-        <div className="bg-grid-white/[0.05] divide-y-white/[0.05] divide-y w-full">
+        {/* <NextUIProviderClient> */}
+        <div className="divide-y-white/[0.05] w-full divide-y">
           <Nav />
           {children}
         </div>
+        {/* </NextUIProviderClient> */}
       </body>
     </html>
   );

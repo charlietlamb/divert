@@ -1,1 +1,1 @@
-export const mainClass = "px-12 py-24";
+export const mainClass = "lg:px-12 lg:py-24 px-8 py-16 w-full";
