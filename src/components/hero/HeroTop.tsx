@@ -1,6 +1,8 @@
 "use client";
 
 import Line1 from "../custom/Squiggily";
+import Squiggle3 from "../squiggle/Squiggle3";
+import Underline from "../squiggle/Underline";
 import HeroTestimonials from "./HeroTestimonials";
 import { motion } from "framer-motion";
 
@@ -14,13 +16,17 @@ export default function HeroTop() {
       viewport={{ amount: "some" }}
     >
       <motion.h2
-        className="title-width title-size text-center font-bold text-slate-200"
+        className="title-width title-size relative text-center font-bold text-slate-200"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        We partner with E-Commerce brands to design high performing landing
-        pages
+        We build landing pages that{" "}
+        <span className="relative">
+          <span className="relative z-10">unlock</span>{" "}
+          <Underline className="absolute bottom-0 left-0 max-w-full" />
+        </span>{" "}
+        more efficient advertising spend
       </motion.h2>
       <motion.h3
         className="title-width text-md text-center  font-medium text-slate-400 sm:text-lg md:text-xl"

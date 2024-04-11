@@ -18,12 +18,20 @@ export default function ReasonsBox({
       transition={{ delay: index * 0.4, duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <div className="flex h-full items-center gap-4">
-        <span className="text-8xl font-black text-slate-200">{index + 1}</span>
-        <div className="relative inline-block w-fit gap-4 p-2">
-          <h3 className="inline-block text-2xl font-bold text-slate-200">
-            {title}
-          </h3>
+      <div className="flex h-full flex-col gap-4">
+        <h3 className="inline-block text-2xl font-bold text-slate-200">
+          {title.split("|").map((part, index) => (
+            <React.Fragment key={index}>
+              {part}
+              <br />
+            </React.Fragment>
+          ))}
+        </h3>
+        <div className="relative flex h-full w-fit items-center gap-4 p-2">
+          <span className="text-8xl font-black text-slate-200">
+            {index + 1}
+          </span>
+
           <p className="text-sm text-slate-400">{text}</p>
         </div>
       </div>

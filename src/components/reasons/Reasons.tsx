@@ -42,7 +42,7 @@ export default function Reasons() {
         to build landing pages
       </motion.h2>
 
-      <motion.div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 lg:grid-cols-4">
+      <motion.div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 xl:grid-cols-4">
         {reasonsData.map((reason, index) => (
           <ReasonsBox key={index} {...reason} index={index} />
         ))}

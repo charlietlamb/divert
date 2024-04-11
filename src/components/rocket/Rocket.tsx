@@ -16,7 +16,7 @@ export default function Rocket() {
         This is our process.
       </p>
       <RocketReveal />
-      <div className="relative flex gap-4">
+      <div className="relative mt-8 flex gap-4">
         <RocketList />
         <RocketRocket />
       </div>
