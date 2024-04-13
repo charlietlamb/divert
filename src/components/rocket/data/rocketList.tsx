@@ -7,7 +7,7 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
-const className = "text-slate-900 md:min-h-24 min-w-16 md:min-w-24 min-h-16";
+const className = "text-slate-900 md:min-h-24 min-w-40 md:min-w-24 min-h-16";
 
 export const rocketList = [
   {

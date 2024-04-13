@@ -76,7 +76,7 @@
 }
 
 .title-width {
-  @apply max-w-none sm:max-w-[70%] md:max-w-[60%];
+  @apply max-w-none sm:max-w-[75%] md:max-w-[65%];
 }
 
 .title-size {

@@ -4,8 +4,10 @@ import { cn } from "@/lib/utils";
 import JourneyVector from "../custom/JourneyVector";
 import { mainClass } from "@/data/mainClass";
 import { motion } from "framer-motion";
+import React from "react";
 
 export default function Journey() {
+  const text = `Reduce the number of clicks in your customer's journey by up to 70%!|Once you try landing pages from DIVERT, you'll never return to the old way`;
   return (
     <div
       className={cn(
@@ -38,9 +40,12 @@ export default function Journey() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        Reduce the number of clicks in your customer&apos;s journey by up to
-        70%! Once you try landing pages from DIVERT, you&apos;ll never return to
-        the old way
+        {text.split("|").map((part, index) => (
+          <React.Fragment key={index}>
+            {part}
+            <br />
+          </React.Fragment>
+        ))}
       </motion.p>
       <JourneyVector className="w-full rounded-lg border-0 border-slate-700 p-4 hover:border-slate-200 sm:w-[90%] md:w-[80%] lg:w-[70%]" />
     </div>

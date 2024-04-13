@@ -5,8 +5,10 @@ import { cn } from "@/lib/utils";
 import ResultsBox from "./ResultsBox";
 import { boxData } from "./data/boxData";
 import { mainClass } from "@/data/mainClass";
+import React from "react";
 
 export default function Results() {
+  const title = "As you can see for yourself,|we get results!";
   return (
     <div
       className={cn(
@@ -31,7 +33,12 @@ export default function Results() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          As you can see for yourself, we get results!
+          {title.split("|").map((part, index) => (
+            <React.Fragment key={index}>
+              {part}
+              <br />
+            </React.Fragment>
+          ))}
         </motion.h2>
       </div>
       <div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 lg:grid-cols-4">

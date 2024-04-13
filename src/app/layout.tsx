@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import "./embla.css";
 import { cn } from "@/lib/utils";
 import Nav from "@/components/nav/Nav";
-import NextUIProviderClient from "@/components/providers/NextUIProviderClient";
 
 export const metadata: Metadata = {
   title: "Create Next App",

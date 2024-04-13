@@ -1,8 +1,7 @@
 "use client";
 
 import Line1 from "../custom/Squiggily";
-import Squiggle3 from "../squiggle/Squiggle3";
-import Underline from "../squiggle/Underline";
+import Underline1 from "../squiggle/Underline1";
 import HeroTestimonials from "./HeroTestimonials";
 import { motion } from "framer-motion";
 
@@ -23,8 +22,10 @@ export default function HeroTop() {
       >
         We build landing pages that{" "}
         <span className="relative">
-          <span className="relative z-10">unlock</span>{" "}
-          <Underline className="absolute bottom-0 left-0 max-w-full" />
+          <span className="relative z-10">
+            unlock
+            <Underline1 className="absolute bottom-0 left-0 w-full max-w-full" />
+          </span>{" "}
         </span>{" "}
         more efficient advertising spend
       </motion.h2>

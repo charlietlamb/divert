@@ -13,9 +13,9 @@ export default function ButtonRound({
   return (
     <Button
       className={cn(
-        "rounded-xl border border-blue-800 text-blue-800 transition hover:bg-blue-800 hover:text-slate-900",
+        "rounded-xl border border-blue-600 text-blue-600 transition hover:bg-blue-600 hover:text-slate-900",
         secondary &&
-          "border-blue-800 bg-blue-800 text-slate-900 hover:border-slate-200 hover:bg-slate-200 hover:text-slate-900",
+          "border-blue-600 bg-blue-600 text-slate-900 hover:border-slate-200 hover:bg-slate-200 hover:text-slate-900",
         className,
       )}
     >
