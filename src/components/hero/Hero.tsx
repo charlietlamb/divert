@@ -11,17 +11,23 @@ export default function Hero() {
       <div
         className={cn(
           "relative flex w-full flex-col items-center justify-center gap-8 bg-grid-white/[0.05]",
-          mainClass,
         )}
       >
         <Spotlight
           className="-top-40 left-[50%] md:-top-20 md:left-60"
           fill="white"
         />
-        <HeroTop />
-        <HeroVideo />
+        <div
+          className={cn(
+            "relative flex w-full flex-col items-center justify-center gap-8",
+            mainClass,
+          )}
+        >
+          <HeroTop />
+          <HeroVideo />
+        </div>
+        <Calendar />
       </div>
-      <Calendar />
     </>
   );
 }

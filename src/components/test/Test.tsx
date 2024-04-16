@@ -1,6 +1,9 @@
+"use client";
+
 import { mainClass } from "@/data/mainClass";
 import { cn } from "@/lib/utils";
 import TestCarousel from "./TestCarousel";
+import { motion } from "framer-motion";
 import { EmblaOptionsType } from "embla-carousel";
 
 export default function Test() {
@@ -11,9 +14,24 @@ export default function Test() {
         mainClass,
       )}
     >
-      <h2 className="title-width title-size relative z-10 text-center text-6xl font-bold text-slate-200">
+      <motion.p
+        className="title-width font-semibold text-blue-700"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        Our testimonials
+      </motion.p>
+      <motion.h2
+        className="title-width title-size relative z-10 text-center text-6xl font-bold text-slate-200"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Case Studies
-      </h2>
+      </motion.h2>
       <TestCarousel />
     </div>
   );

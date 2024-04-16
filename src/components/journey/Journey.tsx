@@ -26,8 +26,8 @@ export default function Journey() {
       </motion.h4>
       <motion.h2
         className="title-width title-size text-center text-6xl font-bold text-slate-200"
-        initial={{ opacity: 0, y: 200 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
@@ -35,7 +35,7 @@ export default function Journey() {
       </motion.h2>
       <motion.p
         className="title-width text-center text-slate-400 lg:text-lg"
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}

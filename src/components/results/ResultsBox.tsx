@@ -14,8 +14,8 @@ export default function ResultsBox({
   return (
     <motion.div
       className="relative flex flex-col gap-4 rounded-lg bg-slate-900 p-4 ring-4 ring-slate-900 ring-offset-2"
-      initial={{ opacity: 0, y: 100 * (index % 2 === 0 ? 1 : -1) }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.4, duration: 0.8 }}
       viewport={{ once: true }}
     >

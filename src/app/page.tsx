@@ -1,3 +1,4 @@
+import FAQ from "@/components/faq/FAQ";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import Journey from "@/components/journey/Journey";
@@ -10,7 +11,7 @@ import Test from "@/components/test/Test";
 export default function Home() {
   return (
     // <TracingBeam>
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden">
       <Hero />
       <Reasons />
       <Journey />
@@ -18,6 +19,7 @@ export default function Home() {
       <Tech />
       <Rocket />
       <Test />
+      <FAQ />
       <Footer />
     </div>
     // </TracingBeam>

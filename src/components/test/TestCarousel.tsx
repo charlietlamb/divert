@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
@@ -12,6 +10,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { cn } from "@/lib/utils";
 import { testData } from "./data/testData";
 import Slide from "./Slide";
+import { motion } from "framer-motion";
 
 type PropType = {
   options?: EmblaOptionsType;
@@ -32,7 +31,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="embla m-0 w-full">
+    <motion.div
+      className="embla m-0 w-full"
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+    >
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {testData.map((data, index) => (
@@ -64,7 +69,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 

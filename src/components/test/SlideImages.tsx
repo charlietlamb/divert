@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TestDataType } from "./data/testData";
+import { TestDataType } from "./data/TestDataType";
 
 export default function SlideImages({ data }: { data: TestDataType }) {
   return (
@@ -17,7 +17,7 @@ export default function SlideImages({ data }: { data: TestDataType }) {
           alt={data.mobileAlt}
           width={800}
           height={800}
-          className="absolute right-0 top-[15%] h-[70%] w-auto rounded-lg"
+          className="absolute right-0 top-[10%] h-[80%] w-auto rounded-lg"
         />
       </div>
     </div>

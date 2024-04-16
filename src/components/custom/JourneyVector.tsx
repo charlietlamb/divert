@@ -9,7 +9,7 @@ export default function JourneyVector({ className }: { className: string }) {
       shape-rendering="geometricPrecision"
       text-rendering="geometricPrecision"
       className={className}
-      initial={{ opacity: 0, y: 300 }}
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}

@@ -28,14 +28,16 @@ export default function RocketPath({
   }, [p]);
 
   return (
-    <div className={cn("relative h-full w-full", className)}>
+    <div className={cn("relative", className)}>
       <Buggati x={endPoint.x} y={endPoint.y} rotation={endPoint.angle} />
       <svg
         viewBox="0 0 854 964"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid meet" // Change preserveAspectRatio attribute
-        className="w-full"
+        className="h-[1550px] w-full"
+        preserveAspectRatio="none"
+        // preserveAspectRatio="xMidYMid meet" // Change preserveAspectRatio attribute
+        // className="w-full"
       >
         {" "}
         {/* Add transform attribute */}
@@ -51,14 +53,14 @@ export default function RocketPath({
           strokeWidth="4"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: p }}
-          className="stroke-amber-500"
+          className="stroke-blue-500"
         />
-        <motion.circle
+        {/* <motion.circle
           cx={endPoint.x}
           cy={endPoint.y}
           r="10"
-          className="fill-amber-500"
-        />
+          className="fill-blue-500"
+        /> */}
       </svg>
     </div>
   );

@@ -33,9 +33,9 @@ export default function RocketRocket() {
   const height = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
   return (
-    <div className="absolute inset-0 overflow-visible" ref={ref}>
+    <div className="absolute inset-0 hidden overflow-visible md:flex" ref={ref}>
       <RocketPath
-        className="absolute -mt-[80px] hidden h-full w-full max-w-full justify-center overflow-visible lg:flex"
+        className="absolute -mt-[80px] hidden h-full min-h-full max-w-full justify-center overflow-visible lg:flex"
         p={p}
       />
       <RocketPathMobile y={y} height={height} />

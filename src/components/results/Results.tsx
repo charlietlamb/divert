@@ -19,7 +19,7 @@ export default function Results() {
       <div className="flex w-full flex-col items-center">
         <motion.span
           className="text-lg font-semibold text-blue-700"
-          initial={{ opacity: 0, x: 500 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -28,7 +28,7 @@ export default function Results() {
         </motion.span>
         <motion.h2
           className="title-size title-width text-center font-bold"
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
