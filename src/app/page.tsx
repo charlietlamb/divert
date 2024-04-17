@@ -1,3 +1,4 @@
+import ClientDouble from "@/components/client/ClientDouble";
 import FAQ from "@/components/faq/FAQ";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
@@ -13,8 +14,10 @@ export default function Home() {
     // <TracingBeam>
     <div className="flex flex-col overflow-x-hidden">
       <Hero />
+      <ClientDouble index={0} />
       <Reasons />
       <Journey />
+      <ClientDouble index={2} />
       <Results />
       <Tech />
       <Rocket />

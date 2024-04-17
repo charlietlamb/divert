@@ -35,7 +35,7 @@ export default function RocketRocket() {
   return (
     <div className="absolute inset-0 hidden overflow-visible md:flex" ref={ref}>
       <RocketPath
-        className="absolute -mt-[80px] hidden h-full min-h-full max-w-full justify-center overflow-visible lg:flex"
+        className="absolute -mt-[80px] hidden h-full min-h-full w-full max-w-full justify-center overflow-visible lg:flex"
         p={p}
       />
       <RocketPathMobile y={y} height={height} />

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Calendar() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" id="calendar">
       <motion.h2
         className="text-center text-2xl font-bold uppercase  md:text-3xl lg:text-4xl"
         initial={{ opacity: 0, x: 100 }}

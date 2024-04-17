@@ -12,7 +12,7 @@ export default function Underline({ className }: { className?: string }) {
         stroke-width="10"
         stroke='url("#SvgjsLinearGradient1001")'
         stroke-linecap="round"
-        stroke-dasharray="0 0"
+        strokeDasharray="0 0"
       ></path>
       <defs>
         <linearGradient

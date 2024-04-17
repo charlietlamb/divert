@@ -1,13 +1,17 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export default function ButtonRound({
   secondary,
   className,
+  onClick,
   children,
 }: {
   secondary?: boolean;
   className?: string;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   return (
@@ -18,6 +22,7 @@ export default function ButtonRound({
           "border-blue-600 bg-blue-600 text-slate-900 hover:border-slate-200 hover:bg-slate-200 hover:text-slate-900",
         className,
       )}
+      onClick={onClick}
     >
       {children}
     </Button>

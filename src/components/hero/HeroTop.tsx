@@ -46,7 +46,7 @@ export default function HeroTop() {
         You drive traffic with a higher{" "}
         <span className="relative">
           conversion
-          <Line1 className="absolute right-1 top-0" />
+          <Line1 className="absolute right-1 top-0 w-full" />
         </span>{" "}
         rate
       </motion.div>

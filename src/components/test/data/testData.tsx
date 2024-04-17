@@ -17,7 +17,7 @@ export const testData = [
     component: (
       <div>
         <div className="flex items-center">
-          <ArrowUpRight className="min-h-12 min-w-12 text-blue-500" />
+          <ArrowUpRight className="min-h-12 min-w-12 text-green-500" />
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold">4.2%</span>{" "}
             <span className="text-slate-400">CVR Increase</span>
@@ -25,7 +25,7 @@ export const testData = [
         </div>
         <div>
           <div className="flex items-center">
-            <ArrowDownRight className="min-h-12 min-w-12 text-blue-500" />
+            <ArrowDownRight className="min-h-12 min-w-12 text-red-500" />
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold">50.2%</span>{" "}
               <span className="text-slate-400">CMP Decrease</span>
@@ -50,7 +50,7 @@ export const testData = [
     component: (
       <div>
         <div className="flex items-center">
-          <ArrowUpRight className="min-h-12 min-w-12 text-blue-500" />
+          <ArrowUpRight className="min-h-12 min-w-12 text-green-500" />
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold">3.9%</span>{" "}
             <span className="text-slate-400">CVR Increase</span>
@@ -58,7 +58,7 @@ export const testData = [
         </div>
         <div>
           <div className="flex items-center">
-            <ArrowDownRight className="min-h-12 min-w-12 text-blue-500" />
+            <ArrowDownRight className="min-h-12 min-w-12 text-red-500" />
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold">24.1%</span>{" "}
               <span className="text-slate-400">CMP Decrease</span>
@@ -82,7 +82,7 @@ export const testData = [
       "Built up an organic following on Meta platforms, Facebook and Instagram. Built individual landing pages for specific timber requirements, using different positioning statements for cold and retargeting campaigns.|Build individual landing pages for specific timber requirements, using different positioning statements for cold and retargeting campaigns.",
     component: (
       <div className="flex items-center">
-        <ArrowUpRight className="min-h-12 min-w-12 text-blue-500" />
+        <ArrowUpRight className="min-h-12 min-w-12 text-green-500" />
         <div className="flex items-center gap-2">
           <span className="text-xl font-bold">5.9%</span>{" "}
           <span className="text-slate-400">CVR Increase</span>

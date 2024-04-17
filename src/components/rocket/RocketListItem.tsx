@@ -22,8 +22,12 @@ export default function RocketListItem({
     >
       <p className="font-bold text-slate-900">{data.icon}</p>
       <div className="flex flex-grow flex-col md:flex-grow-0">
-        <h3 className="text-2xl font-bold text-slate-900">{data.title}</h3>
-        <p className="min-w-[500px] text-lg text-slate-700">{data.text}</p>
+        <h3 className="text-lg font-bold text-slate-900 md:text-2xl">
+          {data.title}
+        </h3>
+        <p className="text-sm text-slate-700 md:min-w-[500px] md:text-lg">
+          {data.text}
+        </p>
       </div>
     </motion.div>
   );

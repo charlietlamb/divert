@@ -1,7 +1,8 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import ButtonRound from "../buttons/ButtonRound";
 import NavItem from "./NavItem";
-import BookACallModal from "../modals/BookACallModal";
 
 export default function NavItems({ vertical = false }: { vertical?: boolean }) {
   return (
@@ -12,7 +13,15 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
       <NavItem>Case Studies</NavItem>
       <NavItem>Process & Thesis</NavItem>
       {/* <NavItem>Resources</NavItem> */}
-      <BookACallModal />
+      <ButtonRound
+        className="text-lg"
+        onClick={() => {
+          const div = document.getElementById("calendar");
+          if (div) div.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Book A Call
+      </ButtonRound>
       <ButtonRound secondary className="text-lg">
         Request A Demo
       </ButtonRound>
