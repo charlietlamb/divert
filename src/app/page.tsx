@@ -12,7 +12,7 @@ import Test from "@/components/test/Test";
 export default function Home() {
   return (
     // <TracingBeam>
-    <div className="flex flex-col overflow-x-hidden">
+    <div className="flex flex-col overflow-x-hidden" id="home">
       <Hero />
       <ClientDouble index={0} />
       <Reasons />
@@ -23,7 +23,6 @@ export default function Home() {
       <Rocket />
       <Test />
       <FAQ />
-      <Footer />
     </div>
     // </TracingBeam>
   );

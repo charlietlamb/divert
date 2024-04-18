@@ -13,6 +13,7 @@ export default function Test() {
         "flex w-full flex-col items-center gap-8 bg-slate-900 px-12 py-24 text-slate-900",
         mainClass,
       )}
+      id="case-studies"
     >
       <motion.p
         className="title-width font-semibold text-blue-700"

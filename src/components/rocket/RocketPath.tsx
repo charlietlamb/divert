@@ -19,9 +19,10 @@ export default function RocketPath({
       const pathLength = pathRef.current.getTotalLength();
       const point = pathRef.current.getPointAtLength(pathLength * p);
       const nextPoint = pathRef.current.getPointAtLength(pathLength * p + 1);
-      const angle =
+      let angle =
         (Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) * 180) /
         Math.PI;
+      if (p === 1) angle = 90;
       setEndPoint({ x: point.x, y: point.y, angle });
       console.log(point.x, point.y);
     }

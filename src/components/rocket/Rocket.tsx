@@ -14,6 +14,7 @@ export default function Rocket() {
         "relative flex w-full flex-col items-center justify-center gap-24 bg-slate-200",
         mainClass,
       )}
+      id="process"
     >
       <div className="flex w-full flex-col items-center">
         <motion.p

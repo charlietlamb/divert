@@ -4,6 +4,7 @@ import "./globals.css";
 import "./embla.css";
 import { cn } from "@/lib/utils";
 import Nav from "@/components/nav/Nav";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "debug-screens relative flex min-h-screen w-full flex-col items-center justify-center bg-slate-900 text-slate-200",
+          "debug-screens relative flex min-h-screen w-full flex-col items-center bg-slate-900 text-slate-200",
           GeistSans.className,
         )}
       >
@@ -28,6 +29,7 @@ export default function RootLayout({
         <div className="divide-y-white/[0.05] w-full divide-y">
           <Nav />
           {children}
+          <Footer />
         </div>
         {/* </NextUIProviderClient> */}
       </body>

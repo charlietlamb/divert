@@ -31,7 +31,7 @@ export default function Client({
         </p>
       </div>
       <div className="mt-auto flex gap-2">
-        <div>
+        <div className="relative">
           <Image
             alt={data.name + " " + data.company}
             src={data.url}
