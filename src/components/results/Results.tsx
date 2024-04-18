@@ -24,7 +24,7 @@ export default function Results() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          It works, too
+          It works, too.
         </motion.span>
         <motion.h2
           className="title-size title-width text-center font-bold"

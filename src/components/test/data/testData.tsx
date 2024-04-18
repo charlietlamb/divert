@@ -2,9 +2,9 @@ import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 
 export const testData = [
   {
-    image: "/images/lila.png",
+    image: "/images/lila_desktop.png",
     imageAlt: "Lila Rasa",
-    mobileImage: "/images/lilaMob.png",
+    mobileImage: "/images/lila_mob.png",
     mobileAlt: "Mobile Alt",
     title: "Chaimate",
     intro:
@@ -36,9 +36,9 @@ export const testData = [
     ),
   },
   {
-    image: "/images/lila.png",
+    image: "/images/chai_desktop.png",
     imageAlt: "Lila Rasa",
-    mobileImage: "/images/lilaMob.png",
+    mobileImage: "/images/chai_mob.png",
     mobileAlt: "Mobile Alt",
     title: "Chaimate",
     intro:

@@ -31,15 +31,14 @@ export default function Reasons() {
         transition={{ delay: 0.5, duration: 1 }}
         viewport={{ once: true }}
       >
-        4 Reasons why you should be using{" "}
+        Why your current landing page does not{" "}
         <span className="max-h-auto relative">
-          DIVERT
+          convert
           <Smudge
             className="absolute inset-0 w-[110%] -translate-y-1/3 opacity-80"
             style={{ zIndex: -10 }}
           />
-        </span>{" "}
-        to build landing pages
+        </span>
       </motion.h2>
 
       <motion.div className="grid grid-cols-1 gap-8 p-4 sm:grid-cols-2 xl:grid-cols-4">

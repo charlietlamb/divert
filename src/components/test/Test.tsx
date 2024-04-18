@@ -22,7 +22,7 @@ export default function Test() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        Our testimonials
+        Our previous work.
       </motion.p>
       <motion.h2
         className="title-width title-size relative z-10 text-center text-6xl font-bold text-slate-200"

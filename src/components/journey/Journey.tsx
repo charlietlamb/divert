@@ -22,7 +22,7 @@ export default function Journey() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        simplify the buying process and increase conversions
+        Simplify the buying process and increase conversions.
       </motion.h4>
       <motion.h2
         className="title-width title-size text-center text-6xl font-bold text-slate-200"

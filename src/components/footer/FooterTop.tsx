@@ -7,6 +7,7 @@ import Divert from "../divert/Divert";
 import { Button } from "@/components/ui/button";
 import FooterHeader from "./FooterHeader";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function FooterTop() {
   const router = useRouter();
@@ -100,10 +101,18 @@ export default function FooterTop() {
       </div>
       <div className="flex flex-col items-center">
         <FooterHeader text="Contact" />
-        <Divert
-          className="max-h-12 min-h-12 min-w-12 max-w-12 text-slate-200"
-          fill="#e2e8f0"
-        />
+        <div className="flex w-full flex-col items-start gap-2 p-4 px-0">
+          <Image
+            width={512}
+            height={512}
+            src={"/images/divert-t-white.svg"}
+            alt={"Divert logo"}
+            className="w-48"
+          />
+          <p>Divert Marketing</p>
+          <p className="text-slate-400">Harpenden, Hertfordshire</p>
+          <p>george-wall@divertmarketing.co.uk</p>
+        </div>
       </div>
     </div>
   );

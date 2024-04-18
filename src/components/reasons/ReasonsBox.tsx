@@ -32,7 +32,15 @@ export default function ReasonsBox({
             {index + 1}
           </span>
 
-          <p className="text-sm text-slate-400">{text}</p>
+          <p className="text-sm text-slate-400">
+            {text.split("|").map((part, index) => (
+              <React.Fragment key={index}>
+                {part}
+                <br />
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
         </div>
       </div>
     </motion.div>
