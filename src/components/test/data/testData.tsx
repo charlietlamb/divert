@@ -6,7 +6,7 @@ export const testData = [
     imageAlt: "Lila Rasa",
     mobileImage: "/images/lila_mob.png",
     mobileAlt: "Mobile Alt",
-    title: "Chaimate",
+    title: "Lila Rasa",
     intro:
       "Lila Rasa is a next generation jewelry brand that creates bespoke handmade jewelry such as necklaces and bracelets.",
     problem:
@@ -69,9 +69,9 @@ export const testData = [
     ),
   },
   {
-    image: "/images/lila.png",
+    image: "xxx",
     imageAlt: "Lila Rasa",
-    mobileImage: "/images/lilaMob.png",
+    mobileImage: "xxx",
     mobileAlt: "Mobile Alt",
     title: "Classic Oak",
     intro:

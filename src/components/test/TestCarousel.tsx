@@ -42,7 +42,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {testData.map((data, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number min-h-12 text-zinc-200">
+              <div className="embla__slide__number min-h-12 text-slate-200">
                 <Slide data={data} />
               </div>
             </div>
@@ -62,7 +62,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               key={index}
               onClick={() => onDotButtonClick(index)}
               className={cn(
-                "embla__dot mx-2 h-4 w-4 rounded-full border border-zinc-200 bg-zinc-200",
+                "embla__dot mx-2 h-4 w-4 rounded-full border border-slate-200 bg-slate-200",
                 index === selectedIndex && " embla__dot--selected",
               )}
             />

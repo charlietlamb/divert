@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import { reasonsData } from "./data/reasonsData";
 import ReasonsBox from "./ReasonsBox";
 import Smudge from "../squiggle/Smudge";
+import Underline1 from "../squiggle/Underline1";
+import Underline2 from "../squiggle/Underline2";
 
 export default function Reasons() {
   return (
@@ -34,10 +36,7 @@ export default function Reasons() {
         Why your current landing page does not{" "}
         <span className="max-h-auto relative">
           convert
-          <Smudge
-            className="absolute inset-0 w-[110%] -translate-y-1/3 opacity-80"
-            style={{ zIndex: -10 }}
-          />
+          <Underline2 className="absolute inset-0 bottom-4 -translate-y-1/3" />
         </span>
       </motion.h2>
 

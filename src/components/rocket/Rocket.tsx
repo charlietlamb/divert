@@ -11,7 +11,7 @@ export default function Rocket() {
   return (
     <div
       className={cn(
-        "relative flex w-full flex-col items-center justify-center gap-24 bg-slate-200",
+        "relative flex w-full flex-col items-center justify-center gap-4 bg-slate-200 lg:gap-24",
         mainClass,
       )}
       id="process"

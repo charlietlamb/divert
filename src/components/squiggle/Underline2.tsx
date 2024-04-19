@@ -15,8 +15,8 @@ export default function Underline2({ className }: { className?: string }) {
       ></path>
       <defs>
         <linearGradient id="SvgjsLinearGradient1001">
-          <stop stop-color="#fbbf24" offset="0"></stop>
-          <stop stop-color="#f59e0b" offset="1"></stop>
+          <stop stop-color="#3B82F6" offset="0"></stop>
+          <stop stop-color="#1D4ED8" offset="1"></stop>
         </linearGradient>
       </defs>
     </svg>

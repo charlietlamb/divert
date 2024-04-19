@@ -19,11 +19,11 @@ export default function FooterTop() {
         mainClass,
       )}
     >
-      <div className="col-span-2 flex flex-col items-center">
+      <div className="flex flex-col items-center md:col-span-2">
         <FooterHeader text="Agency" />
         <div className="grid w-full grid-cols-1 py-4 md:grid-cols-2">
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => {
               if (pathname === "/") {
@@ -37,7 +37,7 @@ export default function FooterTop() {
             Home
           </Button>
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => {
               if (pathname === "/") {
@@ -51,7 +51,7 @@ export default function FooterTop() {
             Book A Call
           </Button>
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => {
               if (pathname === "/") {
@@ -65,7 +65,7 @@ export default function FooterTop() {
             Case Studies
           </Button>
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => {
               if (pathname === "/") {
@@ -84,14 +84,14 @@ export default function FooterTop() {
         <FooterHeader text="Legal" />
         <div className="grid w-full grid-cols-1 py-4">
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => router.push("/privacy-policy")}
           >
             Privacy Policy
           </Button>
           <Button
-            className="flex w-full justify-start px-0 text-lg text-zinc-200"
+            className="flex w-full justify-start px-0 text-lg text-slate-200"
             variant="link"
             onClick={() => router.push("/terms-and-conditions")}
           >

@@ -12,7 +12,7 @@ import Underline1 from "../squiggle/Underline1";
 export default function FAQ() {
   const triggerClassName = "text-2xl font-bold text-slate-900 cursor-pointer";
   return (
-    <div className="flex w-full flex-col items-center gap-8 bg-zinc-200 px-12 py-24 text-slate-900">
+    <div className="flex w-full flex-col items-center gap-8 bg-slate-200 px-12 py-24 text-slate-900">
       <motion.h2
         className="title-size title-width relative text-center font-bold"
         initial={{ opacity: 0, x: -100 }}
