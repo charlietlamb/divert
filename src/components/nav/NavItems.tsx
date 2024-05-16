@@ -11,7 +11,10 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
   const router = useRouter();
   return (
     <div
-      className={cn("hidden gap-2 lg:flex", vertical && "flex flex-col gap-4")}
+      className={cn(
+        "hidden items-center gap-2 lg:flex",
+        vertical && "flex flex-col gap-4",
+      )}
     >
       <NavItem
         onClick={() => {

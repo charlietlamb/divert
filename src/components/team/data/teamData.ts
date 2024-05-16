@@ -9,7 +9,7 @@ export const teamData = [
     id: 2,
     name: "Charlie",
     designation: "Web Developer",
-    image: "/images/charlie_square.png",
+    image: "/images/charlie_white.png",
   },
   {
     id: 3,

@@ -9,6 +9,7 @@ import Rocket from "@/components/rocket/Rocket";
 import Team from "@/components/team/Team";
 import Tech from "@/components/tech/Tech";
 import Test from "@/components/test/Test";
+import Upwork from "@/components/upwork/Upwork";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
       <Results />
       <Tech />
       <Rocket />
-      <Test />
-      <Team />
+      {/* <Test /> */}
+      {<Upwork />}
+      {/* <Team /> */}
       <FAQ />
     </div>
     // </TracingBeam>

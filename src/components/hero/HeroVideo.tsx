@@ -16,9 +16,9 @@ export default function HeroVideo() {
         className=" w-full rounded-md text-slate-200 sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
         src="msc2.mp4"
         poster="poster.png"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
+        initial={{ opacity: 0, x: -200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 1.5 }}
       >
         {/* <source src="msc2.mp4" type="video/mp4" /> */}
       </motion.video>

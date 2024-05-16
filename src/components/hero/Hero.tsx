@@ -4,6 +4,7 @@ import HeroTop from "./HeroTop";
 import HeroVideo from "./HeroVideo";
 import { mainClass } from "@/data/mainClass";
 import Calendar from "../calendar/Calendar";
+import HeroTestimonials from "./HeroTestimonials";
 
 export default function Hero() {
   return (
@@ -25,6 +26,7 @@ export default function Hero() {
         >
           <HeroTop />
           <HeroVideo />
+          <HeroTestimonials />
         </div>
         <Calendar />
       </div>

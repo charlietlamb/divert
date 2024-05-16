@@ -36,7 +36,7 @@ export default function Reasons() {
         Why your current landing page does not{" "}
         <span className="max-h-auto relative">
           convert
-          <Underline2 className="absolute inset-0 bottom-4 -translate-y-1/3" />
+          <Underline2 className="absolute inset-0 bottom-4 w-full -translate-y-1/3" />
         </span>
       </motion.h2>
 

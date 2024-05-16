@@ -5,6 +5,7 @@ import JourneyVector from "../custom/JourneyVector";
 import { mainClass } from "@/data/mainClass";
 import { motion } from "framer-motion";
 import React from "react";
+import JourneyVectorFinal from "../custom/journey-final";
 
 export default function Journey() {
   const text = `Reduce the number of clicks in your customer's journey by up to 70%!|Once you try landing pages from DIVERT, you'll never return to the old way`;
@@ -47,7 +48,7 @@ export default function Journey() {
           </React.Fragment>
         ))}
       </motion.p>
-      <JourneyVector className="w-full rounded-lg border-0 border-slate-700 p-4 hover:border-slate-200 sm:w-[90%] md:w-[80%] lg:w-[70%]" />
+      <JourneyVectorFinal className="w-full rounded-lg border-0 border-slate-700 p-4 hover:border-slate-200 sm:w-[90%] md:w-[80%] lg:w-[70%]" />
     </div>
   );
 }

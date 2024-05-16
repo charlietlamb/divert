@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { AnimatedTooltip } from "../aceternity/AnimatedTooltip";
@@ -8,8 +10,8 @@ export default function HeroTestimonials() {
     <motion.div
       className="flex items-center gap-x-8"
       initial={{ x: -100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 1.5 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <div className="flex">
         <AnimatedTooltip items={items} />

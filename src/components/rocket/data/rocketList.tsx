@@ -28,7 +28,7 @@ export const rocketList = [
   },
   {
     title: "Strategy, Positioning & Copywriting",
-    text: "The Divert team spend 8-10 hours on brand research, positioning and copywriting for your page.",
+    text: "Our CRO experts undergo brand research, positioning and copywriting for your page.",
     icon: <Swords className={className} strokeWidth={2.5} />,
   },
   {

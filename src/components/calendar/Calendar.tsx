@@ -17,7 +17,7 @@ export default function Calendar() {
       </motion.h2>
       <div className="flex w-full justify-center">
         <motion.div
-          className="relative w-[75%] lg:w-full"
+          className="relative z-10 w-[75%] lg:w-full"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -31,6 +31,10 @@ export default function Calendar() {
               height: "698px",
               borderRadius: "8px",
               overflow: "hidden",
+            }}
+            pageSettings={{
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
             }}
           />
         </motion.div>
