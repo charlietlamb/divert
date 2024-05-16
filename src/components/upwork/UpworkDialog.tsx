@@ -45,9 +45,9 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
                   "flex h-full flex-grow flex-col justify-between gap-2",
                   data.col && "mx-auto w-[50%]",
                 )}
+                key={index}
               >
                 <Image
-                  key={index}
                   src={image.url}
                   alt={data.title + " image"}
                   layout="responsive"
@@ -63,7 +63,7 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
           </div>
           <div className="h-px min-h-px w-full rounded-full bg-slate-700" />
           {data.content.map((content, index) => (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2" key={index}>
               <h4 className="font-mediu text-4xl">{content.subheading}</h4>
               <p className="text-slate-400">{content.desc}</p>
             </div>
