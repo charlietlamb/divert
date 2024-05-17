@@ -6,7 +6,7 @@ export const clientData = [
     url: "/images/micheal.png",
   },
   {
-    text: "Used George and his team for a specific paid acquisition campaign we were running. Brilliant communication and speed throughout.| Saw over 20% increase in CVR and not even been 30 days.",
+    text: "Used George and his team for a specific paid acquisition campaign we were running. Brilliant communication and speed throughout.| Saw over 20% increase in conversions and not even been 30 days.",
     name: "Jack",
     company: "Violet Communications",
     url: "/images/jack.png",

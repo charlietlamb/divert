@@ -18,7 +18,7 @@ export default function HeroVideo() {
         poster="poster.png"
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 1, delay: 1 }}
       >
         {/* <source src="msc2.mp4" type="video/mp4" /> */}
       </motion.video>

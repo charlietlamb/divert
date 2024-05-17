@@ -31,18 +31,6 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
       <NavItem
         onClick={() => {
           if (pathname === "/") {
-            const div = document.getElementById("case-studies");
-            if (div) div.scrollIntoView({ behavior: "smooth" });
-          } else {
-            router.push("/");
-          }
-        }}
-      >
-        Case Studies
-      </NavItem>
-      <NavItem
-        onClick={() => {
-          if (pathname === "/") {
             const div = document.getElementById("process");
             if (div) div.scrollIntoView({ behavior: "smooth" });
           } else {
@@ -52,7 +40,18 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
       >
         Process & Thesis
       </NavItem>
-      {/* <NavItem>Resources</NavItem> */}
+      <NavItem
+        onClick={() => {
+          if (pathname === "/") {
+            const div = document.getElementById("case-studies");
+            if (div) div.scrollIntoView({ behavior: "smooth" });
+          } else {
+            router.push("/");
+          }
+        }}
+      >
+        Case Studies
+      </NavItem>
       <ButtonRound
         className="text-lg"
         onClick={() => {
@@ -64,11 +63,11 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
           }
         }}
       >
-        Book A Call
+        Book Your Scale Session
       </ButtonRound>
-      <ButtonRound secondary className="text-lg">
+      {/* <ButtonRound secondary className="text-lg">
         Request A Demo
-      </ButtonRound>
+      </ButtonRound> */}
     </div>
   );
 }
