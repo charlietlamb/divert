@@ -6,7 +6,13 @@ import NavItem from "./NavItem";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 
-export default function NavItems({ vertical = false }: { vertical?: boolean }) {
+export default function NavItems({
+  vertical = false,
+  onClick = () => {},
+}: {
+  vertical?: boolean;
+  onClick?: () => void;
+}) {
   const pathname = usePathname();
   const router = useRouter();
   return (
@@ -21,6 +27,7 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
           if (pathname === "/") {
             const div = document.getElementById("home");
             if (div) div.scrollIntoView({ behavior: "smooth" });
+            if (vertical) onClick();
           } else {
             router.push("/");
           }
@@ -33,6 +40,7 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
           if (pathname === "/") {
             const div = document.getElementById("process");
             if (div) div.scrollIntoView({ behavior: "smooth" });
+            if (vertical) onClick();
           } else {
             router.push("/");
           }
@@ -45,6 +53,7 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
           if (pathname === "/") {
             const div = document.getElementById("case-studies");
             if (div) div.scrollIntoView({ behavior: "smooth" });
+            if (vertical) onClick();
           } else {
             router.push("/");
           }
@@ -58,6 +67,7 @@ export default function NavItems({ vertical = false }: { vertical?: boolean }) {
           if (pathname === "/") {
             const div = document.getElementById("calendar");
             if (div) div.scrollIntoView({ behavior: "smooth" });
+            if (vertical) onClick();
           } else {
             router.push("/");
           }
