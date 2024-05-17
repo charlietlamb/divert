@@ -48,7 +48,7 @@ export default function FooterTop() {
               }
             }}
           >
-            Book A Call
+            Book Your Scale Session
           </Button>
           <Button
             className="flex w-full justify-start px-0 text-lg text-slate-200"
@@ -80,7 +80,7 @@ export default function FooterTop() {
           </Button>
         </div>
       </div>
-      <div className="flex flex-col items-center">
+      {/* <div className="flex flex-col items-center">
         <FooterHeader text="Legal" />
         <div className="grid w-full grid-cols-1 py-4">
           <Button
@@ -98,8 +98,8 @@ export default function FooterTop() {
             Terms & Conditions
           </Button>
         </div>
-      </div>
-      <div className="flex flex-col items-center">
+      </div> */}
+      <div className="flex flex-col items-center md:col-span-2">
         <FooterHeader text="Contact" />
         <div className="flex w-full flex-col items-start gap-2 p-4 px-0">
           <Image
@@ -109,9 +109,10 @@ export default function FooterTop() {
             alt={"Divert logo"}
             className="w-48"
           />
-          <p>Divert Marketing</p>
-          <p className="text-slate-400">Harpenden, Hertfordshire</p>
-          <p>george-wall@divertmarketing.co.uk</p>
+          <p className="font-medium text-slate-100">
+            enquires@divertmarketing.co.uk
+          </p>
+          {/* <p>Divert Marketing</p> */}
         </div>
       </div>
     </div>

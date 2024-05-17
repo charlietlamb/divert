@@ -6,6 +6,7 @@ import Journey from "@/components/journey/Journey";
 import Reasons from "@/components/reasons/Reasons";
 import Results from "@/components/results/Results";
 import Rocket from "@/components/rocket/Rocket";
+import Story from "@/components/story/Story";
 import Team from "@/components/team/Team";
 import Tech from "@/components/tech/Tech";
 import Test from "@/components/test/Test";
@@ -26,6 +27,7 @@ export default function Home() {
       {/* <Test /> */}
       {<Upwork />}
       {/* <Team /> */}
+      <Story />
       <FAQ />
     </div>
     // </TracingBeam>

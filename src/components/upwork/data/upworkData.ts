@@ -27,6 +27,7 @@ export const upworkData = [
       },
     ],
     col: false,
+    thumbnailPosition: "1/3",
   },
   {
     title: "User Experience & CRO of largest Telecom brand in Europe",
@@ -47,6 +48,7 @@ https://www.telekom.de/`,
       },
     ],
     col: true,
+    thumbnailPosition: "top",
   },
   {
     title: "71% increase in sales, only 2% increase in traffic",
@@ -69,6 +71,7 @@ Instead we diverted traffic from the ad straight to a landing page that specific
       },
     ],
     col: true,
+    thumbnailPosition: "left",
   },
   {
     title: "$800k & 267% increase in AOV, in 3 Months",
@@ -99,6 +102,7 @@ When you create a story ACTUALLY explaining how you get visitors from where they
       },
     ],
     col: false,
+    thumbnailPosition: "left",
   },
   {
     title: "5.3% CVR, 20x increase in ROAS - Jewelry Brand",
@@ -132,6 +136,7 @@ Over 20x increase in ROAS with significantly less traffic.`,
       },
     ],
     col: false,
+    thumbnailPosition: "80%",
   },
   {
     title: "$1M => $5M Transformation, >5% CVR",
@@ -162,6 +167,7 @@ Once we have identified different reasons why people buy our products, we make t
       },
     ],
     col: false,
+    thumbnailPosition: "left",
   },
   {
     title: "4.4x increase in AOV, 5% increase in CVR",
@@ -189,6 +195,7 @@ Result:
       },
     ],
     col: false,
+    thumbnailPosition: "left",
   },
   {
     title: "ChaiMate - CRO focus for a new Global Market, >4% CVR",
@@ -217,6 +224,7 @@ Our focus was on customer LTV, and we helped them develop a free trial offer and
       },
     ],
     col: true,
+    thumbnailPosition: "0 60%",
   },
   {
     title:
@@ -249,5 +257,6 @@ Result:
       },
     ],
     col: false,
+    thumbnailPosition: "0 60%",
   },
 ];

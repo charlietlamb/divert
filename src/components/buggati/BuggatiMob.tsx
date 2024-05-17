@@ -9,7 +9,7 @@ export default function BuggatiMob({ style }: { style: React.CSSProperties }) {
       width={100}
       height={50}
       style={style}
-      className="hidden md:flex lg:hidden"
+      className="flex lg:hidden"
     />
   );
 }

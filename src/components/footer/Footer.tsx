@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col gap-4">
       <FooterTop />
-      <FooterBottom />
+      {/* <FooterBottom /> */}
     </div>
   );
 }

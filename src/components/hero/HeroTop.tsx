@@ -6,6 +6,8 @@ import Squiggle2 from "../squiggle/Squiggle2";
 import Underline from "../squiggle/Underline";
 import Underline1 from "../squiggle/Underline1";
 import Underline2 from "../squiggle/Underline2";
+import Underline3 from "../squiggle/Underline3";
+import Underline4 from "../squiggle/Underline4";
 import HeroTestimonials from "./HeroTestimonials";
 import { motion } from "framer-motion";
 
@@ -33,9 +35,9 @@ export default function HeroTop() {
         </span>{" "}
         their{" "}
         <span className="relative">
-          {" "}
-          <span className="relative z-10">average order value</span>
-          <Underline1 className="absolute bottom-0 left-0 w-full max-w-full" />
+          <span className="relative z-40">average order value</span>
+          <Underline3 className="absolute -bottom-2 left-0 hidden w-full max-w-full lg:flex" />
+          <Underline className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
         and <br />{" "}
         <span className="relative">
@@ -45,7 +47,8 @@ export default function HeroTop() {
         their{" "}
         <span className="relative">
           <span className="relative z-10">cost per acquisition</span>
-          <Underline2 className="absolute -bottom-1 left-0 w-full max-w-full" />
+          <Underline4 className="absolute -bottom-1 left-0 hidden w-full max-w-full lg:flex" />
+          <Underline2 className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
         at scale
       </motion.h2>

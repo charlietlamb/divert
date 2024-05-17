@@ -15,7 +15,7 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
     <Dialog>
       <DialogTrigger asChild>
         <motion.div
-          className="group relative flex aspect-square w-full cursor-pointer flex-col items-center justify-center gap-2 overflow-hidden rounded-md border-2 border-slate-200 transition hover:border-slate-100"
+          className="justify-left group relative flex aspect-square w-full cursor-pointer flex-col items-center gap-2 overflow-hidden rounded-md border-2 border-slate-200 transition hover:border-slate-100"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -25,6 +25,7 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
             alt={data.title + " image"}
             layout="fill"
             objectFit="cover"
+            objectPosition={data.thumbnailPosition || "center"}
           />
           <div className="absolute inset-0 hidden bg-black/50 transition group-hover:flex" />
           <h4 className="absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 text-center text-xl font-medium text-white transition group-hover:flex">
@@ -37,12 +38,15 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
           <DialogTitle className="title-size">{data.title}</DialogTitle>
           <div className="h-px min-h-px w-full rounded-full bg-slate-700" />
           <div
-            className={cn("grid grid-cols-2 gap-2", data.col && "grid-cols-1")}
+            className={cn(
+              "grid grid-cols-1 gap-2 md:grid-cols-2",
+              data.col && "md:grid-cols-1",
+            )}
           >
             {data.images.map((image, index) => (
               <div
                 className={cn(
-                  "flex h-full flex-grow flex-col justify-between gap-2",
+                  "flex h-auto flex-col justify-between gap-2",
                   data.col && "mx-auto w-[50%]",
                 )}
                 key={index}

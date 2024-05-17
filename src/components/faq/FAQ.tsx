@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 import Underline1 from "../squiggle/Underline1";
+import { faqData } from "./data/faqData";
+import { FaqDataType } from "./data/FaqDataType";
 
 export default function FAQ() {
   const triggerClassName = "text-2xl font-bold text-slate-900 cursor-pointer";
@@ -38,30 +40,14 @@ export default function FAQ() {
           collapsible
           className="w-full divide-y divide-slate-900 border-slate-900"
         >
-          <AccordionItem value="item-1">
-            <AccordionTrigger className={triggerClassName}>
-              Is it accessible?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className={triggerClassName}>
-              Is it accessible?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className={triggerClassName}>
-              Is it accessible?
-            </AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
+          {faqData.map((faq: FaqDataType, index: number) => (
+            <AccordionItem value={`item-${index}`} key={faq.question}>
+              <AccordionTrigger className={triggerClassName}>
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent>{faq.answer}</AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
       </motion.div>
     </div>

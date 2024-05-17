@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 const className =
-  "text-slate-900 md:min-h-24 min-w-12 lg:min-w-40 md:min-w-24 min-h-16";
+  "text-slate-900 md:min-h-24 min-w-10 lg:min-w-40 md:min-w-24 min-h-16";
 
 export const rocketList = [
   {

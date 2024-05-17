@@ -21,7 +21,7 @@ export default function RocketPathMobile({
       <BuggatiMob
         style={{
           position: "absolute",
-          transform: `translateY(${y}px) translateX(-25%) rotate(90deg)`,
+          transform: `translateY(${y}px) translateX(-28%) rotate(90deg)`,
           left: "calc(90% - 22px)",
           marginTop: "-5px",
         }}

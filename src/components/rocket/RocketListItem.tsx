@@ -14,7 +14,7 @@ export default function RocketListItem({
 }) {
   return (
     <motion.div
-      className={cn("flex w-full gap-4 md:w-[80%] lg:w-[70%]", className)}
+      className={cn("flex w-[80%] gap-4 lg:w-[70%]", className)}
       initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
