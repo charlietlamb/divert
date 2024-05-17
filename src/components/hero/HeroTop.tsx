@@ -35,7 +35,9 @@ export default function HeroTop() {
         </span>{" "}
         their{" "}
         <span className="relative">
-          <span className="relative z-40">average order value</span>
+          <span className="relative z-40 whitespace-nowrap">
+            average order value
+          </span>
           <Underline3 className="absolute -bottom-2 left-0 hidden w-full max-w-full lg:flex" />
           <Underline className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
@@ -46,7 +48,9 @@ export default function HeroTop() {
         </span>{" "}
         their{" "}
         <span className="relative">
-          <span className="relative z-10">cost per acquisition</span>
+          <span className="relative z-10 whitespace-nowrap">
+            cost per acquisition
+          </span>
           <Underline4 className="absolute -bottom-1 left-0 hidden w-full max-w-full lg:flex" />
           <Underline2 className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
