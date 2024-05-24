@@ -35,24 +35,26 @@ export default function HeroTop() {
         </span>{" "}
         their{" "}
         <span className="relative">
-          <span className="relative z-40 whitespace-nowrap">
+          <span className="relative z-40 hidden whitespace-nowrap md:inline-flex">
             average order value
           </span>
+          <span className="relative z-40 inline-flex md:hidden">AOV</span>
           <Underline3 className="absolute -bottom-2 left-0 hidden w-full max-w-full lg:flex" />
           <Underline className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
-        and <br />{" "}
+        and <br className="hidden md:flex" />{" "}
         <span className="relative">
           <span className="relative z-10">lower</span>
           <Squiggle2 className="absolute bottom-0 left-0 w-full max-w-full" />
         </span>{" "}
         their{" "}
         <span className="relative">
-          <span className="relative z-10 whitespace-nowrap">
+          <span className="relative z-10 hidden whitespace-nowrap md:inline-flex">
             cost per acquisition
           </span>
+          <span className="relative z-10 inline-flex md:hidden">CPA</span>
           <Underline4 className="absolute -bottom-1 left-0 hidden w-full max-w-full lg:flex" />
-          <Underline2 className="absolute -bottom-1 left-0 flex w-full max-w-full lg:hidden" />
+          <Underline2 className="absolute bottom-0 left-0 flex w-full max-w-full lg:hidden" />
         </span>{" "}
         at scale
       </motion.h2>

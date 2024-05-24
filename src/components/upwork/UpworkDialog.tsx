@@ -47,7 +47,7 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
               <div
                 className={cn(
                   "flex h-auto flex-col justify-between gap-2",
-                  data.col && "mx-auto w-[50%]",
+                  data.col && "mx-auto w-full md:w-[50%]",
                 )}
                 key={index}
               >

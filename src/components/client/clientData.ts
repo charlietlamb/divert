@@ -2,7 +2,7 @@ export const clientData = [
   {
     text: "Hands down, the best consulting and design relationship we’ve ever had. I can’t imagine using anybody else.| George and his team was exceptional.",
     name: "Michael",
-    company: "Honeypot Developments",
+    company: "Honeycomb Developments",
     url: "/images/micheal.png",
   },
   {
@@ -13,7 +13,7 @@ export const clientData = [
   },
   {
     text: "We are already seeing a 47% conversion to cold traffic.| No paid media yet.",
-    name: "Ollie",
+    name: "Oliver",
     company: "Classic Oak",
     url: "/images/oak.jpeg",
   },

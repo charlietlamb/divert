@@ -17,15 +17,17 @@ export default function Home() {
     // <TracingBeam>
     <div className="flex flex-col overflow-x-hidden" id="home">
       <Hero />
-      <ClientDouble index={0} />
+      <ClientDouble index={0} className="hidden md:flex" />
       <Reasons />
       <Journey />
-      <ClientDouble index={2} />
+      <ClientDouble index={2} className="hidden md:flex" />
       <Results />
       <Tech />
       <Rocket />
       {/* <Test /> */}
       {<Upwork />}
+      <ClientDouble index={0} className="flex flex-col md:hidden" />
+      <ClientDouble index={2} className="flex flex-col md:hidden" />
       {/* <Team /> */}
       <Story />
       <FAQ />

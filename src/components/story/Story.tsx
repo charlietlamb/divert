@@ -4,6 +4,7 @@ import { mainClass } from "@/data/mainClass";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import StoryContent from "./StoryContent";
+import { Button } from "@/components/ui/button";
 
 export default function Story() {
   return (
@@ -33,6 +34,15 @@ export default function Story() {
         Our Story
       </motion.h2>
       <StoryContent />
+      <Button
+        className="border-none bg-slate-200 p-6 text-lg font-semibold text-slate-900 ring-4 ring-slate-200 ring-offset-4 ring-offset-slate-900 hover:text-slate-200 sm:text-2xl md:text-3xl lg:text-4xl"
+        onClick={() => {
+          const div = document.getElementById("calendar");
+          if (div) div.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Book Your Scale Session
+      </Button>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export const boxData = [
     svg: <Squiggle2 className={className} />,
   },
   {
-    title: "46%",
+    title: "212%",
     text: "Average increase in LTV value from landing page traffic.",
     svg: <Squiggle3 className={className} />,
   },
