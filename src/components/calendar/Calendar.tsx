@@ -35,6 +35,7 @@ export default function Calendar() {
             pageSettings={{
               hideEventTypeDetails: false,
               hideLandingPageDetails: false,
+              hideGdprBanner: true,
             }}
           />
         </motion.div>
