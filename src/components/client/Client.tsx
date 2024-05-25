@@ -17,7 +17,7 @@ export default function Client({
 
   return (
     <motion.div
-      className="flex flex-col gap-8 rounded-2xl bg-slate-900 p-8 ring-4 ring-slate-900 ring-offset-2 md:p-16"
+      className="flex flex-col gap-8 rounded-2xl bg-slate-900 p-8 ring-4 ring-slate-900 ring-offset-2 md:w-[50%] md:p-16"
       initial={{ opacity: 0, x: right ? 50 : -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}

@@ -8,7 +8,7 @@ import { items } from "./data/items";
 export default function HeroTestimonials() {
   return (
     <motion.div
-      className="flex items-center gap-x-8"
+      className="flex flex-col items-center gap-2 gap-x-8 md:flex-row"
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
@@ -16,7 +16,7 @@ export default function HeroTestimonials() {
       <div className="flex">
         <AnimatedTooltip items={items} />
       </div>
-      <div className="flex flex-col gap-y-1">
+      <div className="flex flex-col items-center gap-y-1 md:items-start">
         <div className="flex">
           <Star fill="#FFD700" stroke="#FFD700" />
           <Star fill="#FFD700" stroke="#FFD700" />

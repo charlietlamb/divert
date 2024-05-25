@@ -14,8 +14,8 @@ export default function HeroVideo() {
         controls
         preload="none"
         className=" w-full rounded-md text-slate-200 sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
-        src="msc2.mp4"
-        poster="poster.png"
+        src="vsl.mp4"
+        poster="thumbnail.jpg"
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
