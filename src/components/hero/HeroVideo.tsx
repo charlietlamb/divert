@@ -31,7 +31,7 @@ export default function HeroVideo() {
         showByline={false}
         showPortrait={false}
         responsive
-        className="relative z-10 w-full rounded-lg"
+        className="relative z-10 w-full min-w-full rounded-lg"
         color="#e4e4e7"
         // controls={false}
         volume={1}
@@ -43,6 +43,7 @@ export default function HeroVideo() {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          className="w-full min-w-full"
         ></Image>
       </div>
     </motion.div>
