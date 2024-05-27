@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import YouTube from "react-youtube";
+import Vimeo from "@u-wave/react-vimeo";
 
 export default function HeroVideo() {
   return (
@@ -10,7 +10,7 @@ export default function HeroVideo() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 2, x: -200 }}
       viewport={{ amount: "some" }}
-      className="relative flex justify-center overflow-hidden rounded-lg"
+      className="relative flex w-full justify-center overflow-hidden rounded-lg sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%]"
     >
       {/* <motion.video
         controls
@@ -23,9 +23,17 @@ export default function HeroVideo() {
         transition={{ duration: 1, delay: 1 }}
       >
       </motion.video> */}
-      <YouTube
-        videoId="_0iwqyK50J0"
-        className="relative z-50 w-full rounded-md"
+      <Vimeo
+        video="950759145"
+        autoplay
+        showTitle={false}
+        showByline={false}
+        showPortrait={false}
+        responsive
+        className="w-full rounded-lg"
+        color="#e4e4e7"
+        // controls={false}
+        volume={1}
       />
     </motion.div>
   );
