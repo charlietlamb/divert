@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Vimeo from "@u-wave/react-vimeo";
+import Image from "next/image";
 
 export default function HeroVideo() {
   return (
@@ -30,11 +31,20 @@ export default function HeroVideo() {
         showByline={false}
         showPortrait={false}
         responsive
-        className="w-full rounded-lg"
+        className="relative z-10 w-full rounded-lg"
         color="#e4e4e7"
         // controls={false}
         volume={1}
       />
+      <div className="absolute inset-0">
+        <Image
+          src="/thumbnail.jpg"
+          alt="Divert Marketing Thumbnail"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        ></Image>
+      </div>
     </motion.div>
   );
 }
