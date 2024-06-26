@@ -19,6 +19,7 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "1/3",
+    link: "https://www.gallinee.com",
   },
   {
     title: "User Experience & CRO of largest Telecom brand in Europe",
@@ -36,6 +37,7 @@ export const upworkData = [
     ],
     col: true,
     thumbnailPosition: "top",
+    link: null,
   },
   {
     title: "71% increase in sales, only 2% increase in traffic",
@@ -53,6 +55,7 @@ export const upworkData = [
     ],
     col: true,
     thumbnailPosition: "left",
+    link: null,
   },
   {
     title: "$800k & 267% increase in AOV, in 3 Months",
@@ -74,6 +77,7 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "left",
+    link: "https://www.rhinoshield.io",
   },
   {
     title: "5.3% CVR, 20x increase in ROAS - Jewelry Brand",
@@ -99,6 +103,7 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "80%",
+    link: "https://www.lilarasa.co",
   },
   {
     title: "$1M => $5M Transformation, >5% CVR",
@@ -124,6 +129,7 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "left",
+    link: null,
   },
   {
     title: "4.4x increase in AOV, 5% increase in CVR",
@@ -145,6 +151,7 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "left",
+    link: null,
   },
   {
     title: "ChaiMate - CRO focus for a new Global Market, >4% CVR",
@@ -166,6 +173,7 @@ export const upworkData = [
     ],
     col: true,
     thumbnailPosition: "0 60%",
+    link: null,
   },
   {
     title:
@@ -189,5 +197,6 @@ export const upworkData = [
     ],
     col: false,
     thumbnailPosition: "0 60%",
+    link: null,
   },
 ];

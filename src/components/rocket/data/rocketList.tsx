@@ -38,7 +38,7 @@ export const rocketList = [
   },
   {
     title: "Your LP goes LIVE!",
-    text: "We develop your landing page, and once it’s complete, we transfer the fully developed page to you. Now it is time to run some traffic.",
+    text: "We develop your landing page, and once it’s complete, we implement our tracking system and transfer the fully developed page to you. Now it is time to run some traffic.",
     icon: <RadioTower className={className} strokeWidth={2.5} />,
   },
 ];

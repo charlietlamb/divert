@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		
+			<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','UA-3036714-7');</script>
+			<!-- End Google Tag Manager -->
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+	<base href="https://www.themexpert.com/blog/how-to-add-google-analytics-to-joomla">
+	<meta name="keywords" content="Joomla, Google Analytics, website traffic, user behavior, integration">
+	<meta name="rights" content="ThemeXpert">
+	<meta name="author" content="Rakib Hasan Chowdhury">
+	<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+	<meta name="title" content="How to Add Google Analytics to Joomla - ThemeXpert">
+	<meta name="metatitle" content="How to Add Google Analytics to Joomla - ThemeXpert">
+	<meta name="twitter:title" content="How to Add Google Analytics to Joomla - ThemeXpert">
+	<meta name="twitter:description" content="Learn how to effortlessly integrate Google Analytics with Joomla to monitor website traffic and user behavior">
+	<meta property="og:title" content="How to Add Google Analytics to Joomla - ThemeXpert">
+	<meta property="og:description" content="Learn how to effortlessly integrate Google Analytics with Joomla to monitor website traffic and user behavior">
+	<meta property="og:url" content="https://www.themexpert.com/blog/how-to-add-google-analytics-to-joomla">
+	<meta property="og:type" content="article">
+	<meta name="description" content="Learn how to effortlessly integrate Google Analytics with Joomla to monitor website traffic and user behavior">
+	<meta name="generator" content="ThemeXpert">
+	<title>How to Add Google Analytics to Joomla - ThemeXpert</title>    <link rel="preconnect" href="https://www.themexpert.com/">
+    <link rel="dns-prefetch" href="https://www.themexpert.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://ajax.googleapis.com">
+	<link href="https://www.themexpert.com/blog/how-to-add-google-analytics-to-joomla" rel="canonical">
+	<link href="/images/logo-symbol.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="https://www.themexpert.com/media/quixnxt/css/quix-core.css?ver=4.5.4" rel="stylesheet" media="all">
+	<link href="/media/plg_system_jcemediabox/css/jcemediabox.min.css?7c18c737af0919db884d585b5f82e461" rel="stylesheet">
+	<link href="/media/com_jce/site/css/content.min.css?badb4208be409b1335b815dde676300e" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Inter:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic&amp;display=swap" rel="stylesheet" media="none" onload='media="all"'>
+	<link href="//fonts.googleapis.com/css?family=Bricolage%20Grotesque:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic-ext&amp;display=swap" rel="stylesheet" media="none" onload='media="all"'>
+	<link href="/cache/com_templates/templates/tx24/345555b21e80497e462465b67836412a.css" rel="stylesheet">
+	<style>
+#qx-heading-ycr7o {margin-left: 5px;text-align: left;}#qx-heading-ycr7o:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-ycr7o h6 {font-size: 1.3em;color: #fff;}#qx-icon-list-tu6hs:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}.qx-element-icon-list svg {width: 30px;}#qx-icon-list-tu6hs ul li span.qx-icon-text {font-size: 0.9em;color: rgba(255, 255, 255, 0.69);}#qx-icon-list-tu6hs ul li:hover span.qx-icon-text,#qx-icon-list-tu6hs ul lia:hover span {color: #fff;}#qx-icon-list-tu6hs ul.desktop-vertical-layout li {margin-bottom:5px}#qx-icon-list-tu6hs ul.desktop-horizontal-layout li {margin-right:5px}#qx-icon-list-tu6hs ul li .qx-icon-text {margin-left: 5px;}#qx-icon-list-tu6hs ul li i {display: block;}#qx-icon-list-tu6hs ul li :hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-rbzkp {width: 22.13675%;}#qx-column-rbzkp > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-rbzkp .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-rbzkp .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-heading-jud4i {margin-left: 5px;text-align: left;}#qx-heading-jud4i:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-jud4i h6 {font-size: 1.3em;color: #fff;}#qx-icon-list-vzqdx:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-icon-list-vzqdx ul li span.qx-icon-text {font-size: 0.9em;color: rgba(255, 255, 255, 0.69);}#qx-icon-list-vzqdx ul li:hover span.qx-icon-text,#qx-icon-list-vzqdx ul lia:hover span {color: #fff;}#qx-icon-list-vzqdx ul.desktop-vertical-layout li {margin-bottom:5px}#qx-icon-list-vzqdx ul.desktop-horizontal-layout li {margin-right:5px}#qx-icon-list-vzqdx ul li .qx-icon-text {margin-left: 5px;}#qx-icon-list-vzqdx ul li i {display: block;}#qx-icon-list-vzqdx ul li :hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-bqtf7 {width: 20%;}#qx-column-bqtf7 > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-bqtf7 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-bqtf7 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-heading-9u74f {margin-left: 5px;text-align: left;}#qx-heading-9u74f:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-9u74f h6 {font-size: 1.3em;color: #fff;}#qx-icon-list-fzyrl:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-icon-list-fzyrl ul li span.qx-icon-text {font-size: 0.9em;color: rgba(255, 255, 255, 0.69);}#qx-icon-list-fzyrl ul li:hover span.qx-icon-text,#qx-icon-list-fzyrl ul lia:hover span {color: #fff;}#qx-icon-list-fzyrl ul.desktop-vertical-layout li {margin-bottom:5px}#qx-icon-list-fzyrl ul.desktop-horizontal-layout li {margin-right:5px}#qx-icon-list-fzyrl ul li .qx-icon-text {margin-left: 5px;}#qx-icon-list-fzyrl ul li i {display: block;}#qx-icon-list-fzyrl ul li :hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-894iz {width: 21.45299%;}#qx-column-894iz > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-894iz .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-894iz .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-heading-6ftba {margin-left: 5px;text-align: left;}#qx-heading-6ftba:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-6ftba h6 {font-size: 1.5em;color: #fff;}#qx-icon-list-aarh9:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-icon-list-aarh9 ul li span.qx-icon-text {font-size: 0.9em;color: rgba(255, 255, 255, 0.69);}#qx-icon-list-aarh9 ul li:hover span.qx-icon-text,#qx-icon-list-aarh9 ul lia:hover span {color: #fff;}#qx-icon-list-aarh9 ul.desktop-vertical-layout li {margin-bottom:5px}#qx-icon-list-aarh9 ul.desktop-horizontal-layout li {margin-right:5px}#qx-icon-list-aarh9 ul li .qx-icon-text {margin-left: 5px;}#qx-icon-list-aarh9 ul li i {display: block;}#qx-icon-list-aarh9 ul li :hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-bcekx {width: 18.54701%;}#qx-column-bcekx > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-bcekx .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-bcekx .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-heading-2uce0 {margin-left: 5px;text-align: left;}#qx-heading-2uce0:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-2uce0 h6 {font-size: 1.5em;color: #fff;}#qx-icon-list-n64sw:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-icon-list-n64sw ul li span.qx-icon-text {font-size: 0.9em;color: rgba(255, 255, 255, 0.69);}#qx-icon-list-n64sw ul li:hover span.qx-icon-text,#qx-icon-list-n64sw ul lia:hover span {color: #fff;}#qx-icon-list-n64sw ul.desktop-vertical-layout li {margin-bottom:5px}#qx-icon-list-n64sw ul.desktop-horizontal-layout li {margin-right:5px}#qx-icon-list-n64sw ul li .qx-icon-text {margin-left: 5px;}#qx-icon-list-n64sw ul li i {display: block;}#qx-icon-list-n64sw ul li :hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-4m195 {width: 17.86325%;}#qx-column-4m195 > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-4m195 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-4m195 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-row-14jev:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-2zltk {text-align: left;}#qx-heading-2zltk:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-2zltk h6 {font-size: 3em;color: #fff;}#qx-column-ig3sn {width: 75%;}#qx-column-ig3sn > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-ig3sn .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-ig3sn .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-social-icon-6qjhg:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}.qx-element-social-icon svg {width: 30px;}.qx-element-social-icon i {font-size: 30px;}#qx-social-icon-6qjhg ul.horizontalDesktopLayout {margin:-10px}#qx-social-icon-6qjhg ul.verticalDesktopLayout li {margin-bottom:10px}#qx-social-icon-6qjhg ul.horizontalDesktopLayout li {margin:10px}#qx-social-icon-6qjhg ul li a:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-pgcpw {width: 25%;}#qx-column-pgcpw > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-pgcpw .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-pgcpw .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-row-vomzo {margin-top: 2em;margin-bottom: 2em;padding-top: 3em;padding-bottom: 3em;border-style: solid;border-top-width: 1px;border-bottom-width: 1px;border-color: rgba(255, 255, 255, 0.18);}#qx-row-vomzo:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca {text-align: center;}#qx-image-w4sca:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca img.lazyloaded,#qx-image-w4sca svg,#qx-image-w4sca i {display: inline-block;}#qx-image-w4sca img:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca svg:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca i:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca .qx-figure-caption {color: rgba(0, 0, 0, 0.8);}#qx-image-w4sca .qx-figure-caption:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-text-8zicq {font-size: 0.9em;text-align: center;color: rgba(255, 255, 255, 0.3);}#qx-text-8zicq:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-xjlfy {width: 100%;}#qx-column-xjlfy > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-xjlfy .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-xjlfy .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-row-sgjs2:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-section-jefmr {padding-top: 80px;padding-right: 0px;padding-bottom: 80px;padding-left: 0px;background-color: #080808;position: relative;left: auto;right: auto;top: auto;bottom: auto;}#qx-section-jefmr:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-image-w4sca svg{ width: 1200px !important; }.qx-element-icon-list ul { list-style: none; margin: 0; padding-left: 0; } .qx-element-icon-list ul li a:hover { text-decoration: none; } .qx-element-icon-list ul li { cursor: pointer; } .qx-element-icon-list ul li span.qx-icon-text {flex: 1;} .desktop-horizontal-layout, .tablet-horizontal-layout, .phone-horizontal-layout { margin-left: 0; margin-right: 8px; margin-bottom: 0; } .desktop-vertical-layout, .tablet-vertical-layout, .phone-vertical-layout { margin-left: 0; margin-bottom: 0; } .desktop-horizontal-layout li:last-child, .tablet-horizontal-layout li:last-child, .phone-horizontal-layout li:last-child { margin-right: 0; } .desktop-vertical-layout li:last-child, .tablet-vertical-layout li:last-child, .phone-vertical-layout li:last-child { margin-bottom: 0; } @media (max-width: 767px) { .phone-vertical-layout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .phone-horizontal-layout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .phone-vertical-layout li, .phone-horizontal-layout li, .phone-vertical-layout li a, .phone-horizontal-layout li a { display: flex; align-items: center; } .vertical-alignPhone-left { align-items: flex-start; } .vertical-alignPhone-center { align-items: center; } .vertical-alignPhone-right { align-items: flex-end; } .horizontal-alignPhone-left { justify-content: flex-start; } .horizontal-alignPhone-center { justify-content: center; } .horizontal-alignPhone-right { justify-content: flex-end; } } @media (min-width: 640px) { .tablet-vertical-layout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .tablet-horizontal-layout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .tablet-vertical-layout li, .tablet-horizontal-layout li, .tablet-vertical-layout li a, .tablet-horizontal-layout li a { display: flex; align-items: center; } .vertical-alignTablet-left { align-items: flex-start; } .vertical-alignTablet-center { align-items: center; } .vertical-alignTablet-right { align-items: flex-end; } .horizontal-alignTablet-left { justify-content: flex-start; } .horizontal-alignTablet-center { justify-content: center; } .horizontal-alignTablet-right { justify-content: flex-end; } } @media (min-width: 960px) { .desktop-vertical-layout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .desktop-horizontal-layout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .desktop-vertical-layout li, .desktop-horizontal-layout li, .desktop-vertical-layout li a, .desktop-horizontal-layout li a { display: flex; align-items: center; } .vertical-alignDesktop-left { align-items: flex-start; } .vertical-alignDesktop-center { align-items: center; } .vertical-alignDesktop-right { align-items: flex-end; } .horizontal-alignDesktop-left { justify-content: flex-start; } .horizontal-alignDesktop-center { justify-content: center; } .horizontal-alignDesktop-right { justify-content: flex-end; } } @media (max-width: 767px) { .horizontalPhoneLayout li { padding-left: 0; } .verticalPhoneLayout li:last-child { margin-bottom: 0 !important; } .verticalPhoneLayout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .horizontalPhoneLayout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .verticalPhoneLayout li, .horizontalPhoneLayout li { display: flex; align-items: center; } .verticalAlignPhoneSileft { align-items: flex-start; } .verticalAlignPhoneSicenter { align-items: center; } .verticalAlignPhoneSiright { align-items: flex-end; } .horizontalAlignPhoneSileft { justify-content: flex-start; } .horizontalAlignPhoneSicenter { justify-content: center; } .horizontalAlignPhoneSiright { justify-content: flex-end; } } @media (min-width: 640px) { .horizontalTabletLayout li { padding-left: 0; } .verticalDesktopLayout li:last-child { margin-bottom: 0 !important; } .verticalTabletLayout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .horizontalTabletLayout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .verticalTabletLayout li, .horizontalTabletLayout li { display: flex; align-items: center; } .verticalAlignTabletSileft { align-items: flex-start; } .verticalAlignTabletSicenter { align-items: center; } .verticalAlignTabletSiright { align-items: flex-end; } .horizontalAlignTabletSileft { justify-content: flex-start; } .horizontalAlignTabletSicenter { justify-content: center; } .horizontalAlignTabletSiright { justify-content: flex-end; } } @media (min-width: 960px) { .horizontalDesktopLayout li { padding-left: 0; } .verticalDesktopLayout li:last-child { margin-bottom: 0 !important; } .verticalDesktopLayout { -ms-flex-direction: column; -webkit-flex-direction: column; flex-direction: column; } .horizontalDesktopLayout { -ms-flex-direction: row; -webkit-flex-direction: row; flex-direction: row; flex-wrap: wrap; } .verticalDesktopLayout li, .horizontalDesktopLayout li { display: flex; align-items: center; } .verticalAlignDesktopSileft { align-items: flex-start; } .verticalAlignDesktopSicenter { align-items: center; } .verticalAlignDesktopSiright { align-items: flex-end; } .horizontalAlignDesktopSileft { justify-content: flex-start; } .horizontalAlignDesktopSicenter { justify-content: center; } .horizontalAlignDesktopSiright { justify-content: flex-end; } } @media (min-width: 768px) and (max-width: 1024px){#qx-heading-ycr7o {text-align: center;}#qx-icon-list-tu6hs ul.tablet-vertical-layout li {margin-bottom:5px}#qx-icon-list-tu6hs ul.tablet-horizontal-layout li {margin-right:5px}#qx-icon-list-tu6hs ul li .qx-icon-text {margin-left: 5px;}#qx-column-rbzkp .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-rbzkp .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-rbzkp {width: 20%;}#qx-heading-jud4i {text-align: center;}#qx-icon-list-vzqdx ul.tablet-vertical-layout li {margin-bottom:5px}#qx-icon-list-vzqdx ul.tablet-horizontal-layout li {margin-right:5px}#qx-icon-list-vzqdx ul li .qx-icon-text {margin-left: 5px;}#qx-column-bqtf7 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-bqtf7 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-bqtf7 {width: 20%;}#qx-heading-9u74f {text-align: center;}#qx-icon-list-fzyrl ul.tablet-vertical-layout li {margin-bottom:5px}#qx-icon-list-fzyrl ul.tablet-horizontal-layout li {margin-right:5px}#qx-icon-list-fzyrl ul li .qx-icon-text {margin-left: 5px;}#qx-column-894iz .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-894iz .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-894iz {width: 20%;}#qx-heading-6ftba {text-align: center;}#qx-icon-list-aarh9 ul.tablet-vertical-layout li {margin-bottom:5px}#qx-icon-list-aarh9 ul.tablet-horizontal-layout li {margin-right:5px}#qx-icon-list-aarh9 ul li .qx-icon-text {margin-left: 5px;}#qx-column-bcekx .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-bcekx .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-bcekx {width: 20%;}#qx-heading-2uce0 {text-align: center;}#qx-icon-list-n64sw ul.tablet-vertical-layout li {margin-bottom:5px}#qx-icon-list-n64sw ul.tablet-horizontal-layout li {margin-right:5px}#qx-icon-list-n64sw ul li .qx-icon-text {margin-left: 5px;}#qx-column-4m195 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-4m195 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-4m195 {width: 20%;}#qx-heading-2zltk {text-align: center;}#qx-column-ig3sn .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-ig3sn .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-ig3sn {width: 75%;}#qx-social-icon-6qjhg ul.horizontalTabletLayout {margin:-10px}#qx-social-icon-6qjhg ul.verticalTabletLayout li {margin-bottom:5px}#qx-social-icon-6qjhg ul.horizontalTabletLayout li {margin:5px}#qx-column-pgcpw .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-pgcpw .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-pgcpw {width: 25%;}#qx-column-xjlfy .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-xjlfy .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-xjlfy {width: 100%;}#qx-section-jefmr {padding-top: 40px;padding-right: 0px;padding-bottom: 40px;padding-left: 0px;}}@media (max-width: 767px){#qx-heading-ycr7o {text-align: center;}#qx-icon-list-tu6hs ul.phone-vertical-layout li {margin-bottom:5px}#qx-icon-list-tu6hs ul.phone-horizontal-layout li {margin-right:5px}#qx-icon-list-tu6hs ul li .qx-icon-text {margin-left: 5px;}#qx-column-rbzkp .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-rbzkp .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-rbzkp {width: 100%;}#qx-heading-jud4i {text-align: center;}#qx-icon-list-vzqdx ul.phone-vertical-layout li {margin-bottom:5px}#qx-icon-list-vzqdx ul.phone-horizontal-layout li {margin-right:5px}#qx-icon-list-vzqdx ul li .qx-icon-text {margin-left: 5px;}#qx-column-bqtf7 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-bqtf7 .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-bqtf7 {width: 100%;}#qx-heading-9u74f {text-align: center;}#qx-icon-list-fzyrl ul.phone-vertical-layout li {margin-bottom:5px}#qx-icon-list-fzyrl ul.phone-horizontal-layout li {margin-right:5px}#qx-icon-list-fzyrl ul li .qx-icon-text {margin-left: 5px;}#qx-column-894iz .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-894iz .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-894iz {width: 100%;}#qx-heading-6ftba {text-align: center;}#qx-icon-list-aarh9 ul.phone-vertical-layout li {margin-bottom:5px}#qx-icon-list-aarh9 ul.phone-horizontal-layout li {margin-right:5px}#qx-icon-list-aarh9 ul li .qx-icon-text {margin-left: 5px;}#qx-column-bcekx .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-bcekx .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-bcekx {width: 100%;}#qx-heading-2uce0 {text-align: center;}#qx-icon-list-n64sw ul.phone-vertical-layout li {margin-bottom:5px}#qx-icon-list-n64sw ul.phone-horizontal-layout li {margin-right:5px}#qx-icon-list-n64sw ul li .qx-icon-text {margin-left: 5px;}#qx-column-4m195 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-4m195 .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-4m195 {width: 100%;}#qx-heading-2zltk {text-align: center;}#qx-column-ig3sn .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-ig3sn .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-ig3sn {width: 100%;}#qx-social-icon-6qjhg ul.horizontalPhoneLayout {margin:-10px}#qx-social-icon-6qjhg ul.verticalPhoneLayout li {margin-bottom:5px}#qx-social-icon-6qjhg ul.horizontalPhoneLayout li {margin:5px}#qx-column-pgcpw .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-pgcpw .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-pgcpw {width: 100%;}#qx-column-xjlfy .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-xjlfy .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-xjlfy {width: 100%;}#qx-section-jefmr {padding-top: 20px;padding-right: 0px;padding-bottom: 20px;padding-left: 0px;}}body.site {background: #080808;color:rgba(243,244,246);}
+/*bootstrap fix*/
+.collapse.in{display:block;}
+.collapse:not(.in) {display: none;}
+.tx-form .form-control,
+.tx-form .input-group-text
+{
+    background-color: hsla(0,0%,100%,.1);
+    color: hsla(0,0%,100%,.7);
+background-clip: padding-box;border-color: hsla(0,0%,100%,.2);
+}body{font-family: 'Inter', sans-serif;font-size: 16px;font-weight: 400;text-decoration: none;}
+h1{font-family: 'Bricolage Grotesque', sans-serif;color: #ffffff;text-decoration: none;}
+h2{font-family: 'Bricolage Grotesque', sans-serif;color: #ffffff;text-decoration: none;}
+.logo-image {height:32px;}.logo-image-phone {height:32px;}@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}.logo-image {height:32px;}.logo-image-phone {height:32px;}@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}#sp-main-body{ padding:0px; }.logo-image {height:32px;}.logo-image-phone {height:32px;}@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}#qx-countdown-vb5s4:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-countdown-vb5s4 .qx-countdown-label,#qx-countdown-vb5s4 .qx-countdown-number {display: block;}#qx-countdown-vb5s4 .qx-countdown-number {color: #1dd760;font-size: 2em;}#qx-countdown-vb5s4 .qx-countdown-label {font-size: 0.8em;}#qx-countdown-vb5s4 .qx-countdown-item {background-color: #080808;opacity: 1;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}#qx-countdown-vb5s4 .qx-countdown-separator {line-height: 1;}#qx-column-v9d91 {width: 31.86046%;}#qx-column-v9d91 > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-v9d91 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 0px;}#qx-column-v9d91 .qx-element-wrap+.qx-element-wrap {margin-top: 0px;}#qx-heading-spm4e {text-align: left;}#qx-heading-spm4e:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-heading-spm4e span {font-weight: 600;font-size: 1.2em;color: #fff;}#qx-column-x4zc8 {width: 50.5327%;}#qx-column-x4zc8 > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-x4zc8 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 0px;}#qx-column-x4zc8 .qx-element-wrap+.qx-element-wrap {margin-top: 0px;}#qx-button-r5v6n {text-align: right;}#qx-button-r5v6n:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-button-r5v6n .qx-btn {background-color: #f43f5e;transition: background 0s, opacity 0s ease-in, border 0s ease-in, box-shadow 0s ease-in;border-style: solid;border-top-width: 3px;border-right-width: 3px;border-bottom-width: 3px;border-left-width: 3px;border-color: rgba(255, 255, 255, 0.12);border-top-left-radius: 30px;border-top-right-radius: 30px;border-bottom-right-radius: 30px;border-bottom-left-radius: 30px;}#qx-button-r5v6n .qx-btn:hover {background-color: #1dd760;transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-button-r5v6n * {font-weight: 600;font-size: 17px;}#qx-button-r5v6n .iconSpacing-left i,#qx-button-r5v6n .iconSpacing-left svg {margin-right: 5px;}#qx-button-r5v6n .iconSpacing-right i,#qx-button-r5v6n .iconSpacing-right svg {margin-left: 5px;}#qx-column-aikge {width: 17.60683%;}#qx-column-aikge > .qx-col-wrap:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-column-aikge .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-aikge .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-row-zr2io:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}#qx-section-8rmyi {margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;position: relative;left: auto;right: auto;top: auto;bottom: auto;}#qx-section-8rmyi:hover {transition: border 0.3s ease-in, box-shadow 0.3s ease-in, background 0.3s, opacity 0.3s ease-in;}.qx-countdown-label{ margin: 0 !important; } #qx-countdown-xge98 .qx-countdown-number { min-height: 32px; }#qx-button-dr7za img{width: 30px;} #qx-button-dr7za svg, #qx-button-dr7za img{height: 30px;} @media (min-width: 768px) and (max-width: 1024px){#qx-column-v9d91 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-v9d91 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-v9d91 {width: 33.33333%;}#qx-heading-spm4e {text-align: center;}#qx-column-x4zc8 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-x4zc8 .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-x4zc8 {width: 33.33333%;}#qx-button-r5v6n {text-align: left;}#qx-button-r5v6n .iconSpacing-left i,#qx-button-r5v6n .iconSpacing-left svg {margin-right: 5px;}#qx-button-r5v6n .iconSpacing-right i,#qx-button-r5v6n .iconSpacing-right svg {margin-left: 5px;}#qx-column-aikge .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 20px;}#qx-column-aikge .qx-element-wrap+.qx-element-wrap {margin-top: 20px;}#qx-column-aikge {width: 33.33333%;}#qx-section-8rmyi {padding-top: 40px;padding-right: 0px;padding-bottom: 40px;padding-left: 0px;}}@media (max-width: 767px){#qx-column-v9d91 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 0px;}#qx-column-v9d91 .qx-element-wrap+.qx-element-wrap {margin-top: 0px;}#qx-column-v9d91 {width: 100%;}#qx-heading-spm4e {text-align: center;}#qx-column-x4zc8 .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 0px;}#qx-column-x4zc8 .qx-element-wrap+.qx-element-wrap {margin-top: 0px;}#qx-column-x4zc8 {width: 100%;}#qx-button-r5v6n {text-align: center;}#qx-button-r5v6n .iconSpacing-left i,#qx-button-r5v6n .iconSpacing-left svg {margin-right: 15px;margin-right:15px}#qx-button-r5v6n .iconSpacing-right i,#qx-button-r5v6n .iconSpacing-right svg {margin-left: 15px;margin-left:15px}#qx-column-aikge .qx-fb-elements .qx-fb-element+.qx-fb-element {margin-top: 10px;}#qx-column-aikge .qx-element-wrap+.qx-element-wrap {margin-top: 10px;}#qx-column-aikge {width: 100%;}#qx-section-8rmyi {padding-top: 20px;padding-right: 0px;padding-bottom: 20px;padding-left: 0px;}}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"10"}},"csrf.token":"41bcad58fffa742981f4a63dd8913587","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?8bb5498be3f089d0c9d08a8eaa376d16"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?8bb5498be3f089d0c9d08a8eaa376d16"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?8bb5498be3f089d0c9d08a8eaa376d16"></script>
+	<script src="/media/plg_system_jcemediabox/js/jcemediabox.min.js?7c18c737af0919db884d585b5f82e461"></script>
+	<script src="https://www.themexpert.com/media/quixnxt/js/quix.vendor.js?ver=8bb5498be3f089d0c9d08a8eaa376d16" defer></script>
+	<script src="/templates/tx24/js/bootstrap.bundle.min.js"></script>
+	<script src="/templates/tx24/js/main.js"></script>
+	<script src="https://www.themexpert.com/media/quixnxt/js/quix.vendor.js?ver=4.5.4" defer></script>
+	<script src="/media/system/js/core.js?8bb5498be3f089d0c9d08a8eaa376d16"></script>
+	<script>
+jQuery(document).ready(function(){WfMediabox.init({"base":"\/","theme":"standard","width":"","height":"","lightbox":1,"shadowbox":0,"icons":1,"overlay":1,"overlay_opacity":0,"overlay_color":"","transition_speed":300,"close":2,"scrolling":"scroll","labels":{"close":"Close","next":"Next","previous":"Previous","cancel":"Cancel","numbers":"{{numbers}}","numbers_count":"{{current}} of {{total}}","download":"Download"},"swipe":true});});template="tx24";
+	</script>
+	<script type="application/ld+json">
+{"@context":"http:\/\/schema.org","@type":"Organization","name":"ThemeXpert Inc.","url":"https:\/\/www.themexpert.com","logo":"https:\/\/www.themexpert.com\/images\/themexpert_logo_for_paypal.png","sameAs":["https:\/\/www.facebook.com\/ThemeXpert","https:\/\/twitter.com\/themexpert","https:\/\/plus.google.com\/+Themexpert","https:\/\/www.youtube.com\/user\/ThemeXpert","https:\/\/www.linkedin.com\/company\/2918657"],"contactPoint":{"@type":"ContactPoint","telephone":"+88 02 9114147","contactType":"customer support","areaServed":["World"],"availableLanguage":["English + Bangla"]},"address":{"@type":"PostalAddress","streetAddress":"Level - 12, Suite - 1202, SEL HUQ SKYPARK, House: 23\/2","addressLocality":"Shyamoli, Mirpur Rd, Dhaka","addressRegion":"Dhaka","postalCode":"1207","addressCountry":"BD"}}
+	</script>
+	<!-- Start: Google Structured Data -->
+             <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://www.themexpert.com/blog" }, { "@type": "ListItem", "position": 2, "name": "Joomla", "item": "https://www.themexpert.com/blog/categories/joomla-tutorials" }, { "@type": "ListItem", "position": 3, "name": "How to Add Google Analytics to Joomla", "item": "https://www.themexpert.com/blog/how-to-add-google-analytics-to-joomla" } ] } </script> <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Article", "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.themexpert.com/blog/how-to-add-google-analytics-to-joomla" }, "headline": "How to Add Google Analytics to Joomla", "description": "&lt;p&gt;To ensure sustained growth and progress of their business, website owners and administrators must keep a keen eye on their online performance. One indispensable tool that assists in this endeavor is Google Analytics.&lt;/p&gt;", "image": { "@type": "ImageObject", "url": "https://www.themexpert.com/images/blog_google_analytics.jpg" }, "author": { "@type": "Person", "name": "Rakib Hasan Chowdhury" }, "publisher": { "@type": "Organization", "name": "ThemeXpert", "logo": { "@type": "ImageObject", "url": "https://www.themexpert.com/images/tx-logo_new_2019_256x60.png" } }, "datePublished": "2023-11-05T14:38:28+06:00", "dateCreated": "2023-11-05T14:38:28+06:00", "dateModified": "2024-03-05T16:34:38+06:00" } </script>
+            <!-- End: Google Structured Data -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TDRP');</script>
+		<!-- End Google Tag Manager -->
+	<style>
+a:hover {
+    text-decoration: inherit;
+}
+#template-list .tx-card img{
+    max-height: 330px;
+    object-fit: cover;
+    object-position: top;
+}
+#dc-product.quix-layout .product-intro{
+    display: none;
+
+  }
+  
+.login .form-control {
+    background-color: hsla(0,0%,100%,.1);
+    color: hsla(0,0%,100%,.7);
+    background-clip: padding-box;
+    border-color: hsla(0,0%,100%,.2);
+}
+
+.login .input-group-text {
+    background-color: hsla(0,0%,100%,.1);
+    color: hsla(0,0%,100%,.7);
+    background-clip: padding-box;
+    border-color: hsla(0,0%,100%,.2);
+}
+
+.login .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  
+}.sp-megamenu-wrapper .sp-megamenu-parent > li:nth-child(3):before {
+    content: 'New';
+    position: absolute;
+    background-color: #02e702;
+    color: #000;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    top: -11px;
+    left: 12px;
+    font-weight: 500;
+}
+
+#digicom.dc-category .featured-categories ul li {
+    width: auto;
+}
+
+  .modal-content{
+  	background-color: #222;
+  }
+  .fade.in{
+  	opacity: 1;0
+  }
+</style></head>
+	<body class="site helix-ultimate hu com_content com-content view-article layout-default task-none itemid-2045 en-gb ltr sticky-header layout-fluid offcanvas-init offcanvs-position-right">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDRP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		
+		
+		<div class="body-wrapper">
+			<div class="body-innerwrapper">
+				
+	<div class="sticky-header-placeholder"></div>
+<header id="sp-header">
+	<div class="container card-animated card-animated-loop">
+		<div class="card-effect" style="--start-angle: 624deg;--delay: 11s;"></div>
+		<div class="container-inner">
+			<div class="row">
+				<!-- Logo -->
+				<div id="sp-logo" class="col-auto">
+					<div class="sp-column">
+						<div class="logo"><a href="https://www.themexpert.com">
+				<img class="logo-image " srcset="https://www.themexpert.com/images/logo-white.svg 1x" src="https://www.themexpert.com/images/logo-white.svg" height="32px" alt="ThemeXpert">
+				</a></div>						
+					</div>
+				</div>
+
+				<!-- Menu -->
+				<div id="sp-menu" class="col-auto flex-auto">
+					<div class="sp-column  d-flex justify-content-end align-items-center">
+						<nav class="sp-megamenu-wrapper d-flex" role="navigation"><a id="offcanvas-toggler" aria-label="Menu" class="offcanvas-toggler-right d-flex d-lg-none" href="#"><div class="burger-icon" aria-hidden="true"><span></span><span></span><span></span></div></a><ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li class="sp-menu-item"><a href="/joomla-templates">Templates</a></li><li class="sp-menu-item sp-has-child"><a href="/quix-pagebuilder" title="Quix - Joomla Page Builder">Page Builder</a><div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-center" style="width: 620px;left: -310px;"><div class="sp-dropdown-inner"><div class="row"><div class="col-sm-7"><ul class="sp-mega-group"><li class="item-2131 menu_item item-header"><li class="item-1712 menu_item item-header"><li class="item-1949 menu_item item-header"><li class="item-1952 menu_item item-header"><li class="item-2151 menu_item item-header"><li class="item-402 module "><div class="sp-module "><div class="sp-module-content">
+
+<div class="custom">
+	<ul class="mega-items">
+	<li><a href="/quix-pagebuilder" class="qx-grid qx-grid-small qx-flex-middle">
+			<div class="qx-width-auto">
+				<svg xmlns="https://www.w3.org/2000/svg" width="28" viewbox="0 0 640 512">
+					<path d="M611.14 448h-69.72L357.48 159.68l32.84-50.37c11.57-17.75 39.8-17.75 51.37 0l194 297.6c11.77 18-2.05 41.09-24.55 41.09z" class="fa-secondary"></path>
+					<path d="M338.33 189.07L503.5 448H30.92C6.81 448-8 422.81 4.58 403.18l207.9-324.66c12.4-19.36 42.64-19.36 55 0z" class="fa-primary"></path>
+				</svg>
+			</div>
+			<div class="qx-width-expand">
+				<div class="mega-item-title">Overview</div>
+				<p class="mega-item-subtitle">Joomla website without hassle</p>
+			</div>
+		</a></li>
+	<li><a href="/quix/website-builder" class="qx-grid qx-grid-small qx-flex-middle">
+			<div class="qx-width-auto">
+				<svg width="24" viewbox="0 0 448 512">
+					<path d="M240 416h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm-96 0h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm192 0h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm96-192h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 96h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 96h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-288h-32a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z" class="fa-secondary"></path>
+					<path d="M432 32H32A32 32 0 0 0 0 64v400a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V96h368a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z" class="fa-primary"></path>
+				</svg>
+			</div>
+			<div class="qx-width-expand">
+				<div class="mega-item-title">Visual Site Builder</div>
+				<p class="mega-item-subtitle">Drag &amp; Drop realtime editing</p>
+			</div>
+		</a></li>
+	<li><a href="/quix/header-builder" class="qx-grid qx-grid-small qx-flex-middle">
+			<div class="qx-width-auto">
+				<svg width="28" viewbox="0 0 512 512">
+					<path d="M359.425,276.48438a31.98517,31.98517,0,0,0,45.06388,4.09375A31.46789,31.46789,0,0,0,415.57518,256h-73.221ZM183.9978,288H328.0022V256H183.9978Zm80.00244,128h64.002V384h-64.002ZM107.51109,280.57813a32.00633,32.00633,0,0,0,45.06388-4.09375L169.6458,256h-73.221A31.46789,31.46789,0,0,0,107.51109,280.57813ZM264.00024,352h64.002V320h-64.002Zm-80.00244,0h64.002V320h-64.002ZM509.7929,140.416l-29.78606-12.41993-12.42226-29.7832a3.99158,3.99158,0,0,0-7.15256,0l-12.41835,29.7832-29.79,12.41993a4.00079,4.00079,0,0,0,0,7.15625l29.79,12.41992,12.41835,29.7832a3.99158,3.99158,0,0,0,7.15256,0l12.42226-29.7832,29.78606-12.41992a4.004,4.004,0,0,0,0-7.15625ZM183.9978,416h64.002V384h-64.002ZM63.99414,32.002,51.57189,2.21875a3.99473,3.99473,0,0,0-7.15647,0L31.99707,32.002,2.211,44.42188a3.99921,3.99921,0,0,0,0,7.15429L31.99707,63.99609,44.41542,93.78125a3.99473,3.99473,0,0,0,7.15647,0L63.99414,63.99609,93.7763,51.57617a3.99921,3.99921,0,0,0,0-7.15429Z" class="fa-secondary"></path>
+					<path d="M384.00391,448H127.99609a32.00082,32.00082,0,0,0-32.001,32v32H416.00488V480A32.00082,32.00082,0,0,0,384.00391,448ZM255.96094,96l.01953-.00195L256,96a48,48,0,1,0,0-96l-.01953.002L255.96094,0a48,48,0,1,0,0,96ZM338.19,151.03125A63.84344,63.84344,0,0,0,289.01663,128H222.98337a63.78806,63.78806,0,0,0-49.15775,23.03125L113.01517,224H398.98874Z" class="fa-primary"></path>
+				</svg>
+			</div>
+			<div class="qx-width-expand">
+				<div class="mega-item-title">Header &amp; Footer Builder</div>
+				<p class="mega-item-subtitle">Endless design customization</p>
+			</div>
+		</a></li>
+	<li><a href="/quix/blocks" class="qx-grid qx-grid-small qx-flex-middle">
+			<div class="qx-width-auto">
+				<svg width="24" viewbox="0 0 512 512">
+					<path d="M128 256a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm379.51-80l-95-160c-12.67-21.33-44.35-21.33-57 0l-95 160c-12.67 21.33 3.17 48 28.51 48H479c25.34 0 41.18-26.67 28.51-48z" class="fa-secondary"></path>
+					<path d="M512 320v160a32 32 0 0 1-32 32H320a32 32 0 0 1-32-32V320a32 32 0 0 1 32-32h160a32 32 0 0 1 32 32z" class="fa-primary"></path>
+				</svg>
+			</div>
+			<div class="qx-width-expand">
+				<div class="mega-item-title">Blocks Templates</div>
+				<p class="mega-item-subtitle">Pre-designed section templates</p>
+			</div>
+		</a></li>
+	<li><a href="/quix/layouts" class="qx-grid qx-grid-small qx-flex-middle">
+			<div class="qx-width-auto">
+				<svg width="24" viewbox="0 0 512 512">
+					<path d="M64,256h64V192H64Zm370.66-88.29h0L344.5,77.36a31.83,31.83,0,0,0-45-.07h0l-.07.07L224,152.88V424L434.66,212.9A32,32,0,0,0,434.66,167.71ZM64,128h64V64H64ZM480,320H373.09L186.68,506.51c-2.06,2.07-4.5,3.58-6.68,5.49H480a32,32,0,0,0,32-32V352A32,32,0,0,0,480,320Z" class="fa-secondary"></path>
+					<path d="M160,0H32A32,32,0,0,0,0,32V416a96,96,0,0,0,192,0V32A32,32,0,0,0,160,0ZM96,440a24,24,0,1,1,24-24A24,24,0,0,1,96,440Zm32-184H64V192h64Zm0-128H64V64h64Z" class="fa-primary"></path>
+				</svg>
+			</div>
+			<div class="qx-width-expand">
+				<div class="mega-item-title">Page Templates</div>
+				<p class="mega-item-subtitle">Pre-designed page template library</p>
+			</div>
+		</a></li>
+</ul></div>
+</div></div></li><li class="item-2141 menu_item item-header"></ul></div><div class="col-sm-5"><ul class="sp-mega-group"><li class="item-2149 menu_item item-header"><a href="/quix/performance"><span class="fas fa-bolt"></span> Performance &amp; SEO</a></li><li class="item-2162 menu_item item-header"><a href="/quix/cross-domain-copy-paste" title="Cross Domain Copy Paste"><span class="fas fa-map-signs"></span> Cross Domain Copy Paste</a></li><li class="item-1894 menu_item item-header"><a href="/quix/elements"><span class="fas fa-dice-five"></span> Elements</a></li></ul></div></div></div></div></li><li class="sp-menu-item"><a href="/joomla-media-manager">JMedia</a></li><li class="sp-menu-item"><a href="/joomla-instantpage">Instant Page</a></li><li class="sp-menu-item sp-has-child"><span class=" sp-menu-separator">Resources</span><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="/learn-joomla">Learn Joomla</a></li><li class="sp-menu-item"><a href="/support">Submit Ticket</a></li><li class="sp-menu-item"><a href="/docs">Documentation</a></li><li class="sp-menu-item"><a href="/video-tutorials">Video Tutorials</a></li><li class="sp-menu-item"><a href="/support-policy">Support Policy</a></li><li class="sp-menu-item"><a href="https://www.themexpert.com/blog">Blog</a></li></ul></div></div></li><li class="sp-menu-item"><a href="/pricing">Pricing</a></li></ul></nav>						
+
+						<!-- Related Modules -->
+						<div class="d-none d-lg-flex header-modules align-items-center">
+								
+															<div class="sp-module">
+<a class="sp-sign-in" href="/login"><span class="signin-text d-none d-lg-inline-block">Sign In</span></a>
+<a class="cta-btn" href="/pricing">Get Started</a>
+</div>													</div>
+						
+						<!-- if offcanvas position right -->
+													<a id="offcanvas-toggler" aria-label="Menu" title="Menu" class="mega offcanvas-toggler-secondary offcanvas-toggler-right d-flex align-items-center" href="#">
+							<div class="burger-icon"><span></span><span></span><span></span></div>
+							</a>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>				
+<section id="sp-top">
+
+				
+	
+<div class="row">
+	<div id="sp-title" class="col-lg-12 "><div class="sp-column "><div class="sp-module "><div class="sp-module-content"><div class="mod-quix-library">
+    <div class="qx quix" data-qx="111" data-type="section"><div class="qx-inner frontend qx-type-section qx-item-111"> <section id="qx-section-8rmyi" class="qx-section qx-d-md-none qx-d-lg-flex qx-d-sm-none qx-d-xs-none qx-d-none"> <div class="qx-section-8rmyi-background-overlay qx-background-overlay"></div> <div class="qx-container"> <div id="qx-row-zr2io" class="qx-row-wrap lazyload"><div class="qx-row qx-row-align-center qx-flex-md-row qx-flex-column-reverse"> <div class="qx-background-overlay qx-row-zr2io-background-overlay"></div> <div id="qx-column-v9d91" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-v9d91-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-countdown-vb5s4" class="qx-element qx-element-countdown-v2"> <div class="qx-countdown-wrapper qx-grid qx-grid-collapse qx-child-width-expand@s qx-child-width-1-2" qx-grid qx-countdown="date:2024-06-30T23:59:59"> <div class="qx-countdown-days-wrap"> <div class="qx-countdown-item qx-text-center"> <div class="qx-countdown-number qx-countdown-days"></div> <div class="qx-countdown-label qx-margin-small"> Days </div> </div> </div> <div class="qx-countdown-hours-wrap"> <div class="qx-countdown-item qx-text-center"> <div class="qx-countdown-number qx-countdown-hours"></div> <div class="qx-countdown-label qx-margin-small"> Hours </div> </div> </div> <div class="qx-countdown-minutes-wrap"> <div class="qx-countdown-item qx-text-center"> <div class="qx-countdown-number qx-countdown-minutes"></div> <div class="qx-countdown-label qx-margin-small"> Minutes </div> </div> </div> <div class="qx-countdown-seconds-wrap"> <div class="qx-countdown-item qx-text-center"> <div class="qx-countdown-number qx-countdown-seconds"></div> <div class="qx-countdown-label qx-margin-small"> Seconds </div> </div> </div> </div> </div></div> </div> </div> </div><div id="qx-column-x4zc8" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-x4zc8-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-spm4e" class="qx-element qx-element-heading-v2"> <span> <span> EID MUBARAK! Enjoy a 30% discount.
+Coupon: <strong>ADHA24</strong><small style="font-size: 0.6em;">(Valid for annual subscription)</small> </span> </span> </div></div> </div> </div> </div><div id="qx-column-aikge" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-aikge-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-button-r5v6n" class="qx-element qx-element-button-v2"> <a class="qx-btn qx-btn-primary" href="https://www.themexpert.com/pricing"><div class="qx-element-button-wrapper iconSpacing-left qx-align-items-center qx-justify-content-center"><img data-src="https://www.themexpert.com/media/quixnxt/storage/icons/qxio-ios-color-wand-outline.svg" alt="qxio-ios-color-wand-outline" class="qx-preserve" qx-svg=""> <span>Grab The Deal</span></div></a> <style type="text/css">#qx-button-r5v6n .qx-element-button-wrapper img{width:25px;height:25px;} #qx-button-r5v6n .qx-element-button-wrapper i {color: rgba(255, 255, 255, 1);font-size: 25px;}#qx-button-r5v6n .qx-element-button-wrapper polygon,#qx-button-r5v6n .qx-element-button-wrapper path {fill: rgba(255, 255, 255, 1);}#qx-button-r5v6n .qx-element-button-wrapper svg {width: 25px;}</style> </div></div> </div> </div> </div></div></div></div></section></div></div></div>
+</div></div></div></div></div>
+				
+</section>
+<section id="sp-main-body">
+
+									
+	
+<div class="row">
+	
+<main id="sp-component" class="col-lg-12 ">
+	<div class="sp-column ">
+		<div id="system-message-container" aria-live="polite">
+			</div>
+
+
+		
+		<div class="article-details qx-section " >
+	<div class="qx-container-small qx-margin-auto qx-padding-small">
+		
+		
+				<div class="article-header">
+							<h1 >
+					How to Add Google Analytics to Joomla				</h1>
+														</div>
+		
+		
+											<div class="article-full-image float-left">
+							<img class="caption" title="Adding Google Analytics to Joomla" src="/images/blog_google_analytics.jpg" alt="How to Add Google Analytics to Joomla" >
+								<figcaption class="caption">Adding Google Analytics to Joomla</figcaption>
+						</div>
+	
+		
+				
+		<div class="article-can-edit d-flex flex-wrap justify-content-between">
+											</div>
+						
+				
+						
+				
+				
+		<div class="article-body" >
+			<p>To ensure sustained growth and progress of their business, website owners and administrators must keep a keen eye on their online performance. One indispensable tool that assists in this endeavor is Google Analytics.</p>
+ 
+<p>To ensure sustained growth and progress of their business, website owners and administrators must keep a keen eye on their online performance. One indispensable tool that assists in this endeavor is Google Analytics.</p>
+<p>In this comprehensive guide, we will delve into the intricacies of adding Google Analytics to a Joomla website. Whether you're a tech-savvy individual or a complete beginner, we've got you covered. So, let's dive right in.</p>
+<h2>What is Google Analytics?</h2>
+<p><img src="/images/blog/how_add_google-analytics/image9.png" width="1200" height="413" data-alt="image9"></p>
+<p>Before we dive into the setup process, let's start with the basics. Google Analytics is a powerful web analytics tool offered by Google that allows you to track and analyze your website's performance. It provides valuable data about your visitors, their behavior on your site, and much more. With this information, you can make data-driven decisions to enhance your website's performance and user experience.</p>
+<h2>Why Should You Use Google Analytics with Joomla?</h2>
+<p>Integrating Google Analytics with your Joomla website has several advantages. It allows you to:</p>
+<ul>
+<li><strong>Track Website Traffic:</strong> Get a clear picture of how many visitors your website is attracting.</li>
+<li><strong>Understand User Behavior:</strong> Learn what your visitors are doing on your site, including which pages they visit, how long they stay, and where they're from.</li>
+<li><strong>Measure Conversions:</strong> Determine if your website is meeting its goals, whether it's making a sale or getting sign-ups.</li>
+<li><strong>Make Informed Decisions:</strong> With data in hand, you can optimize your content, design, and marketing strategies for better results.</li>
+</ul>
+<h2>Getting Started</h2>
+<p>Now that we've established the importance of Google Analytics let's move on to the practical steps of integrating it with your Joomla website.</p>
+<p><strong>Sign Up for Google Analytics</strong></p>
+<p>To get started, you'll need a <a href="https://analytics.google.com/" target="_blank" rel="nofollow noopener">Google Analytics</a> account. If you already have one, you can skip this step. If not, here's how to create one:</p>
+<p><img src="/images/blog/how_add_google-analytics/image3.png" width="1434" height="794" data-alt="image3"></p>
+<ul>
+<li>Visit the Google Analytics website.</li>
+<li>Sign in with your Google account or create one if you don't have one.</li>
+<li>Click on "Start measuring" and follow the setup prompts.</li>
+<li>Provide the necessary information about your website.</li>
+</ul>
+<p><strong>Get Your Tracking ID</strong></p>
+<p>Once your account is set up, Google Analytics will provide you with a script. This code is essential for tracking visitors to your Joomla site. Here's how to get it:</p>
+<p><img src="/images/blog/how_add_google-analytics/image8.png" width="762" height="397" data-alt="image8"></p>
+<ul>
+<li>In your Google Analytics account, navigate to the Admin section.</li>
+<li>Under the Property column, select your website.</li>
+<li>Click on "Tracking Info" and then "Tracking Code."</li>
+<li>Copy the code provided.</li>
+</ul>
+<p><strong>Installing Google Analytics in Joomla template panel (T3, T4, and Helix Ultimate)</strong></p>
+<p>To install Google Analytics in a Joomla website using the T3, T4, or Helix Ultimate template, you'll need to follow these general steps. Keep in mind that the specific process may vary slightly depending on the version of Joomla you're using and the template framework you have in place. Here's a general guideline:</p>
+<p style="text-align: center;"><span style="font-size: 11pt; font-family: Arial, sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="/images/blog/how_add_google-analytics/image2.png" width="1244" height="929" alt="image2">Image: T3 Template</span></p>
+<ul>
+<li>Log in to your Joomla administrator panel.</li>
+<li>Depending on the template framework you're using (T3, T4, or Helix Ultimate), the steps may vary. In general, you will find "Site Template Styles" in the Joomla administrator panel.</li>
+<li>Now select the template where you would like to add the Google Analytics.</li>
+<li>Then look for a "Custom Code" or similar section within the template options.</li>
+<li>Now paste the tracking code snippet &lsquo;After &lt;head&gt;&rsquo; or &lsquo;Before &lt;/head&gt;&rsquo; section and click on the save and close button.</li>
+</ul>
+<p>That's the basic process. The exact steps may differ slightly based on the version of Joomla and the template framework, so consult the documentation for your specific template and Joomla version if you encounter any issues.</p>
+<p><strong>Custom Installing Google Analytics on Joomla</strong></p>
+<p>Now comes the part where you integrate Google Analytics with Joomla. Here's how to do it:</p>
+<p><img src="/images/blog/how_add_google-analytics/image5.png" width="1905" height="876" alt="image5"></p>
+<ul>
+<li>Log in to your Joomla admin panel.</li>
+<li>Go to "Extensions" and select "Templates."</li>
+<li>Choose your template and click on "Edit Main Page Template."</li>
+<li>Paste the Google Analytics tracking code just before the closing &lt;/head&gt; tag.</li>
+<li>Save your changes.</li>
+</ul>
+<p><strong>Save and Verify</strong></p>
+<p>Don't forget to save your changes. Once saved, go back to your Google Analytics account and verify the tracking code. It might take a few hours for Google Analytics to start collecting data, so be patient.</p>
+<h3>How to Add Google Analytics to Joomla Using Quix Page Builder</h3>
+<p>To add Google Analytics using <a href="/quix-pagebuilder" target="_blank" rel="noopener">Quix Page Builder</a>, You'll need to add the tracking code to your Joomla website. Follow these steps:</p>
+<p><img src="/images/blog/how_add_google-analytics/image13.png" width="1902" height="953" alt="image13"></p>
+<ul>
+<li>Log in to your Joomla website's admin panel.</li>
+<li>In the Joomla admin panel, navigate to your Quix-Joomla Page Builder section.</li>
+<li>Click on the &lsquo;Code&rsquo; section and go to the &lsquo;Head Code&rsquo; section.</li>
+<li>Paste the tracking code. The tracking code snippet that you need to add to your website. It will look something like this:&nbsp;<br>
+<p><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"&gt;&lt;/script&gt;</code><br><code>&lt;script&gt;</code><br><code> window.dataLayer = window.dataLayer || [];</code><br><code> function gtag() {</code><br><code> window.dataLayer.push(arguments);</code><br><code> }</code><br><code> gtag('js', new Date());</code></p>
+<p><code>gtag('config', 'GA_MEASUREMENT_ID');</code><br><code>&lt;/script&gt;</code></p>
+</li>
+<li>Then click on the &lsquo;Save Changes&rsquo; button.</li>
+</ul>
+<p>It might take some time for Google Analytics to start collecting data. You can verify that it's working by logging into your Google Analytics account and checking for data under your property.</p>
+<p>Please note that the specific steps may vary depending on your Joomla version, the Quix version you're using, and the template you've chosen. Always refer to the documentation provided by Quix or the template's documentation for any template-specific instructions.</p>
+<h2>Analyzing Data - Making the Most of the Insights</h2>
+<p>Google Analytics 4 (GA4) is a powerful web analytics platform that provides you with a wealth of data and insights about your website's performance. To make the most of GA4, it's essential to understand and utilize the various reports it offers. Here are some key reports you should pay attention to:</p>
+<h3>Home</h3>
+<p><img src="/images/blog/how_add_google-analytics/image11.png" width="1544" height="574" alt="image11"></p>
+<p>The "Home" report provides an overview of your website's performance at a glance. It includes key metrics like the number of users, sessions, and conversion events. You can quickly assess how your site is performing over a selected time period, such as the last seven days.</p>
+<h3>Reports</h3>
+<p>Under the "Reports" section, you'll find several categories of reports that delve deeper into different aspects of your website's performance. These categories include:</p>
+<h4>Acquisition</h4>
+<p><img src="/images/blog/how_add_google-analytics/image12.png" width="1448" height="600" alt="image12"></p>
+<p>The "Acquisition" report focuses on how users are finding your website. It provides insights into the sources of traffic, such as organic search, paid search, direct, social, or referral. You can use this data to assess the effectiveness of your marketing efforts and optimize your acquisition strategies.</p>
+<h4>Engagement</h4>
+<p><img src="/images/blog/how_add_google-analytics/image1.png" width="1470" height="611" alt="image1"></p>
+<p>The "Engagement" report helps you understand user behavior on your site. It includes metrics like page views, average session duration, and bounce rate. By analyzing this data, you can identify which pages and content are engaging your audience the most and make improvements to keep users engaged.</p>
+<h4>Monetization</h4>
+<p style="text-align: center;"><span style="font-size: 11pt; font-family: Arial, sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><img src="/images/blog/how_add_google-analytics/image4.png" width="1359" height="582" alt="image4">Image Source: Analytify</span></p>
+<p>The "Monetization" report is essential for e-commerce websites and businesses focused on revenue generation. It provides insights into your online sales, transaction data, and e-commerce performance. You can track metrics like revenue, conversion rate, and average order value to optimize your monetization strategies.</p>
+<h4>Retention</h4>
+<p><img src="/images/blog/how_add_google-analytics/image6.png" width="1449" height="591" alt="image6"></p>
+<p>The "Retention" report is crucial for understanding user loyalty and how often users return to your site. It helps you analyze user retention over time, cohort analysis, and user lifetime value. By identifying trends in user behavior, you can tailor your content and marketing efforts to retain and engage your audience effectively.</p>
+<h3>Explorations</h3>
+<p><img src="/images/blog/how_add_google-analytics/image14.png" width="1385" height="530" alt="image14"></p>
+<p>The "Explorations" feature in GA4 allows you to create custom ad-hoc reports to answer specific questions. You can drag and drop dimensions and metrics to create your own data visualizations and gain unique insights tailored to your business goals.</p>
+<h3>Advertising</h3>
+<p><img src="/images/blog/how_add_google-analytics/image10.png" width="1462" height="595" alt="image10"></p>
+<p>The "Advertising" report is valuable for those running ad campaigns. It helps you track and analyze the performance of your advertising efforts, including Google Ads and other paid advertising channels. You can view metrics related to click-through rates, cost per click, and ad spend to optimize your advertising campaigns for better results.</p>
+<p>In Google Analytics, these reports serve as a foundation for understanding your website's performance. By regularly reviewing and analyzing the data in these reports, you can make informed decisions, optimize your website, and improve your online presence. Remember to set specific goals and key performance indicators (KPIs) to measure your success and align your efforts with your business objectives.</p>
+<h2>Improving Your Joomla Website</h2>
+<p><img src="/images/blog/how_add_google-analytics/image7.png" width="700" height="400" alt="image7"></p>
+<p>Integrating Google Analytics is just the first step towards a more successful Joomla website. Here are some additional tips to consider:</p>
+<h3>1. Regularly Review Your Data</h3>
+<p>Don't let your Google Analytics account collect dust. Regularly review the data and adjust your website strategy accordingly. Trends and user behavior change over time, so it's essential to stay updated.</p>
+<h3>2. Set Goals</h3>
+<p>Establish specific goals for your website. Whether it's increasing traffic, reducing bounce rates, or boosting sales, setting clear objectives will help you measure success.</p>
+<h3>3. User Experience</h3>
+<p>Always prioritize the user experience. Make improvements based on data, and ensure that your Joomla site is easy to navigate, loads quickly, and looks visually appealing.</p>
+<h3>4. Mobile Optimization</h3>
+<p>Given the rise in mobile users, ensure that your Joomla website is mobile-friendly. Google Analytics can provide insights into your mobile traffic, which you can use to make necessary adjustments.</p>
+<h2>Conclusion</h2>
+<p>In this comprehensive guide, we've walked you through the process of adding Google Analytics to your Joomla website. From creating a Google Analytics account to integrating it seamlessly with Joomla and exploring the valuable data it provides, you're now well-equipped to harness the power of data analytics to optimize your website's performance.</p>
+<p>Remember, success lies in not only setting it up but also in continuously using the insights gained to improve and grow your online presence. So, go ahead, add Google Analytics to Joomla, and unlock a world of possibilities for your website's success. Happy analyzing!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>		</div>
+
+		
+									<ul class="tags mb-4">
+																	<li class="tag-6 tag-list0" >
+					<a href="/component/tags/tag/blog" class="label label-info">
+						Blog					</a>
+				</li>
+																				<li class="tag-49 tag-list1" >
+					<a href="/component/tags/tag/docs" class="">
+						docs,					</a>
+				</li>
+																				<li class="tag-50 tag-list2" >
+					<a href="/component/tags/tag/documentation" class="">
+						documentation,					</a>
+				</li>
+						</ul>
+		
+		
+						
+				
+		
+
+		
+							
+		
+	</div>
+</div>
+
+			</div>
+</main>
+</div>
+									
+</section>
+			</div>
+		</div>
+
+		<!-- Off Canvas Menu -->
+		<div class="offcanvas-overlay"></div>
+		<!-- Rendering the offcanvas style -->
+		<!-- If canvas style selected then render the style -->
+		<!-- otherwise (for old templates) attach the offcanvas module position -->
+					<div class="offcanvas-menu">
+	<div class="d-flex align-items-center p-3 pt-4">
+		<div class="logo"><a href="https://www.themexpert.com">
+				<img class="logo-image " srcset="https://www.themexpert.com/images/logo-white.svg 1x" src="https://www.themexpert.com/images/logo-white.svg" height="32px" alt="ThemeXpert">
+				</a></div>		<a href="#" class="close-offcanvas" aria-label="Close Off-canvas">
+			<div class="burger-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</a>
+	</div>
+	
+	<div class="offcanvas-inner">
+		<div class="d-flex header-modules mb-3">
+			
+							<div class="sp-module">
+<a class="sp-sign-in" href="/login"><span class="signin-text d-none d-lg-inline-block">Sign In</span></a>
+<a class="cta-btn" href="/pricing">Get Started</a>
+</div>					</div>
+		
+					<div class="sp-module "><div class="sp-module-content"><ul class="menu nav-pills">
+<li class="item-205"><a href="/joomla-templates">Templates</a></li><li class="item-1711 menu-deeper menu-parent"><a href="/quix-pagebuilder" title="Quix - Joomla Page Builder">Page Builder<span class="menu-toggler"></span></a><ul class="menu-child"><li class="item-2149"><a href="/quix/performance">Performance &amp; SEO</a></li><li class="item-2162"><a href="/quix/cross-domain-copy-paste" title="Cross Domain Copy Paste">Cross Domain Copy Paste</a></li><li class="item-1894"><a href="/quix/elements">Elements</a></li></ul></li><li class="item-2285"><a href="/joomla-media-manager">JMedia</a></li><li class="item-1887"><a href="/joomla-instantpage">Instant Page</a></li><li class="item-1942 menu-divider menu-deeper menu-parent"><span class="menu-separator ">Resources<span class="menu-toggler"></span></span>
+<ul class="menu-child"><li class="item-1877"><a href="/learn-joomla">Learn Joomla</a></li><li class="item-1415"><a href="/support">Submit Ticket</a></li><li class="item-1776"><a href="/docs">Documentation</a></li><li class="item-1445"><a href="/video-tutorials">Video Tutorials</a></li><li class="item-1943"><a href="/support-policy">Support Policy</a></li><li class="item-2218"><a href="https://www.themexpert.com/blog">Blog</a></li></ul></li><li class="item-149"><a href="/pricing">Pricing</a></li></ul>
+</div></div>		
+		
+		
+		
+					
+				
+		<!-- custom module position -->
+		
+	</div>
+</div>				
+
+		
+		
+
+		<!-- Go to top -->
+					<div class="qx quix" data-qx="251" data-type="footer"><div class="qx-inner frontend qx-type-footer qx-item-251"> <section id="qx-section-jefmr" class="qx-section"> <div class="qx-section-jefmr-background-overlay qx-background-overlay"></div> <div class="qx-container"> <div id="qx-row-14jev" class="qx-row-wrap lazyload"><div class="qx-row"> <div class="qx-background-overlay qx-row-14jev-background-overlay"></div> <div id="qx-column-rbzkp" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-rbzkp-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-ycr7o" class="qx-element qx-element-heading-v2"> <h6> <span> Joomla Templates </span> </h6> </div></div><div class="qx-element-wrap"> <div id="qx-icon-list-tu6hs" class="qx-element qx-element-icon-list"> <div class="qx-icon-list-tu6hs-wrapper"> <ul class="qx-flex desktop-vertical-layout tablet-vertical-layout phone-vertical-layout vertical-alignDesktop-left vertical-alignTablet-center vertical-alignPhone-center"> <li class="item-0"> <a href="/joomla-templates"><span class="qx-icon-text">Responsive Joomla Templates</span></a> </li> <li class="item-1"> <a href="/joomla-templates/tag/free"><span class="qx-icon-text">Free Joomla Templates</span></a> </li> <li class="item-2"> <a href="/joomla-templates/tag/education"><span class="qx-icon-text">Education Joomla Templates</span></a> </li> <li class="item-3"> <a href="/joomla-templates/tag/news"><span class="qx-icon-text">News Joomla Templates</span></a> </li> <li class="item-4"> <a href="/joomla-templates/tag/business"><span class="qx-icon-text">Business Joomla Templates</span></a> </li> <li class="item-5"> <a href="/joomla-templates/tag/all"><span class="qx-icon-text">Joomla 4 Templates</span></a> </li> <li class="item-6"> <a href="/joomla-templates"><span class="qx-icon-text">Joomla 5 Templates</span></a> </li> <li class="item-7"> <a href="/joomla-templates/tag/legal"><span class="qx-icon-text">Legal Joomla Templates</span></a> </li> </ul> <style type="text/css">#qx-icon-list-tu6hs li img{width:30px;height:30px;} #qx-icon-list-tu6hs li i {color: rgba(0,0,0,1);font-size: 30px;}#qx-icon-list-tu6hs li polygon,#qx-icon-list-tu6hs li path {fill: rgba(0,0,0,1);}#qx-icon-list-tu6hs li svg {width: 30px;}</style> </div> </div></div> </div> </div> </div><div id="qx-column-bqtf7" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-bqtf7-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-jud4i" class="qx-element qx-element-heading-v2"> <h6> <span> Products </span> </h6> </div></div><div class="qx-element-wrap"> <div id="qx-icon-list-vzqdx" class="qx-element qx-element-icon-list"> <div class="qx-icon-list-vzqdx-wrapper"> <ul class="qx-flex desktop-vertical-layout tablet-vertical-layout phone-vertical-layout vertical-alignDesktop-left vertical-alignTablet-center vertical-alignPhone-center"> <li class="item-0"> <a href="/quix-pagebuilder"><span class="qx-icon-text">Joomla Page Builder</span></a> </li> <li class="item-1"> <a href="/quix/website-builder"><span class="qx-icon-text">Joomla Website Builder</span></a> </li> <li class="item-2"> <a href="/blog/joomla-seo"><span class="qx-icon-text">Joomla SEO</span></a> </li> <li class="item-3"> <a href="/blog/jmedia-beta-release"><span class="qx-icon-text">Joomla Media Manager</span></a> </li> <li class="item-4"> <a href="/joomla-extensions"><span class="qx-icon-text">Joomla Extensions</span></a> </li> <li class="item-5"> <a href="/blog/best-joomla-gallery-extensions"><span class="qx-icon-text">Joomla Image Gallery</span></a> </li> <li class="item-6"> <a href="/joomla-instantpage"><span class="qx-icon-text">Joomla Speed Optimization</span></a> </li> <li class="item-7"> <a href="https://www.thrivedesk.com/wordpress/" target="_blank"><span class="qx-icon-text">WordPress Helpdesk Plugin</span></a> </li> <li class="item-8"> <a href="https://wpsmartpay.com/paddle-for-woocommerce/" target="_blank"><span class="qx-icon-text">Paddle for WooCommerce</span></a> </li> <li class="item-9"> <a href="https://wpsmartpay.com/paddle-for-easydigitaldownloads/" target="_blank"><span class="qx-icon-text">Paddle for Easy Digital Downloads</span></a> </li> </ul> </div> </div></div> </div> </div> </div><div id="qx-column-894iz" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-894iz-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-9u74f" class="qx-element qx-element-heading-v2"> <h6> <span> Services </span> </h6> </div></div><div class="qx-element-wrap"> <div id="qx-icon-list-fzyrl" class="qx-element qx-element-icon-list"> <div class="qx-icon-list-fzyrl-wrapper"> <ul class="qx-flex desktop-vertical-layout tablet-vertical-layout phone-vertical-layout vertical-alignDesktop-left vertical-alignTablet-center vertical-alignPhone-center"> <li class="item-0"> <span class="qx-icon-text">Joomla Website Design</span> </li> <li class="item-1"> <span class="qx-icon-text">Joomla Development Service</span> </li> <li class="item-2"> <span class="qx-icon-text">Joomla Migration Service</span> </li> <li class="item-3"> <span class="qx-icon-text">Joomla SEO Service</span> </li> <li class="item-4"> <span class="qx-icon-text">Webflow Development Service</span> </li> <li class="item-5"> <span class="qx-icon-text">Webflow for Agency</span> </li> <li class="item-6"> <span class="qx-icon-text">Webflow for SaaS</span> </li> </ul> </div> </div></div> </div> </div> </div><div id="qx-column-bcekx" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-bcekx-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-6ftba" class="qx-element qx-element-heading-v2"> <h6> <span> Resources </span> </h6> </div></div><div class="qx-element-wrap"> <div id="qx-icon-list-aarh9" class="qx-element qx-element-icon-list"> <div class="qx-icon-list-aarh9-wrapper"> <ul class="qx-flex desktop-vertical-layout tablet-vertical-layout phone-vertical-layout vertical-alignDesktop-left vertical-alignTablet-center vertical-alignPhone-center"> <li class="item-0"> <a href="/blog"><span class="qx-icon-text">Blog</span></a> </li> <li class="item-1"> <a href="/docs"><span class="qx-icon-text">Documentation</span></a> </li> <li class="item-2"> <a href="/learn-joomla"><span class="qx-icon-text">Learn Joomla</span></a> </li> <li class="item-3"> <a href="/support"><span class="qx-icon-text">Support</span></a> </li> <li class="item-4"> <a href="/video-tutorials"><span class="qx-icon-text">Joomla Training</span></a> </li> <li class="item-5"> <a href="/partners"><span class="qx-icon-text">Partners</span></a> </li> <li class="item-6"> <a href="https://www.facebook.com/groups/530116237158477" target="_blank" rel="nofollow"><span class="qx-icon-text">Community</span></a> </li> </ul> </div> </div></div> </div> </div> </div><div id="qx-column-4m195" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-4m195-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-2uce0" class="qx-element qx-element-heading-v2"> <h6> <span> Company </span> </h6> </div></div><div class="qx-element-wrap"> <div id="qx-icon-list-n64sw" class="qx-element qx-element-icon-list"> <div class="qx-icon-list-n64sw-wrapper"> <ul class="qx-flex desktop-vertical-layout tablet-vertical-layout phone-vertical-layout vertical-alignDesktop-left vertical-alignTablet-center vertical-alignPhone-center"> <li class="item-0"> <a href="/about"><span class="qx-icon-text">About us</span></a> </li> <li class="item-1"> <a href="/terms-of-use"><span class="qx-icon-text"> Terms of Service</span></a> </li> <li class="item-2"> <a href="https://www.iubenda.com/privacy-policy/19646163" target="_blank" rel="nofollow"><span class="qx-icon-text">Privacy Policy</span></a> </li> <li class="item-3"> <a href="/refund-policy"><span class="qx-icon-text">Refund Policy</span></a> </li> <li class="item-4"> <a href="/envato"><span class="qx-icon-text">Envato Support</span></a> </li> </ul> </div> </div></div> </div> </div> </div></div></div><div id="qx-row-vomzo" class="qx-row-wrap lazyload"><div class="qx-row qx-row-align-center"> <div class="qx-background-overlay qx-row-vomzo-background-overlay"></div> <div id="qx-column-ig3sn" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-ig3sn-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-heading-2zltk" class="qx-element qx-element-heading-v2"> <h6> <span> How can we help? <a href="/support"><u>Contact us.</u></a> </span> </h6> </div></div> </div> </div> </div><div id="qx-column-pgcpw" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-pgcpw-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-social-icon-6qjhg" class="qx-element qx-element-social-icon"> <div class="qx-social-icon-6qjhg-wrapper"><ul class="qx-iconnav horizontalDesktopLayout horizontalTabletLayout horizontalPhoneLayout horizontalAlignDesktopSiright horizontalAlignTabletSileft horizontalAlignPhoneSileft"><li class="item-0"><a class="qx-icon" href="#" aria-label="Visit the following links for more" target="_self" rel="follow"><img data-src="https://www.themexpert.com/media/quixnxt/storage/icons/qxif-facebook.svg" alt="qxif-facebook" class="qx-preserve" qx-svg=""></a><style type="text/css">#qx-social-icon-6qjhg li.item-0 img{width:30px;height:30px;} #qx-social-icon-6qjhg li.item-0 i {color: rgba(129, 129, 129, 1);font-size: 30px;}#qx-social-icon-6qjhg li.item-0 polygon,#qx-social-icon-6qjhg li.item-0 path {fill: rgba(129, 129, 129, 1);}#qx-social-icon-6qjhg li.item-0 svg {width: 30px;}</style></li><li class="item-1"><a class="qx-icon" href="#" aria-label="Visit the following links for more" target="_self" rel="follow"><img data-src="https://www.themexpert.com/media/quixnxt/storage/icons/qxif-twitter.svg" alt="qxif-twitter" class="qx-preserve" qx-svg=""></a><style type="text/css">#qx-social-icon-6qjhg li.item-1 img{width:30px;height:30px;} #qx-social-icon-6qjhg li.item-1 i {color: rgba(129, 129, 129, 1);font-size: 30px;}#qx-social-icon-6qjhg li.item-1 polygon,#qx-social-icon-6qjhg li.item-1 path {fill: rgba(129, 129, 129, 1);}#qx-social-icon-6qjhg li.item-1 svg {width: 30px;}</style></li><li class="item-2"><a class="qx-icon" href="#" aria-label="Visit the following links for more" target="_self" rel="follow"><img data-src="https://www.themexpert.com/media/quixnxt/storage/icons/qxif-linkedin-in.svg" alt="qxif-linkedin-in" class="qx-preserve" qx-svg=""></a><style type="text/css">#qx-social-icon-6qjhg li.item-2 img{width:30px;height:30px;} #qx-social-icon-6qjhg li.item-2 i {color: rgba(129, 129, 129, 1);font-size: 30px;}#qx-social-icon-6qjhg li.item-2 polygon,#qx-social-icon-6qjhg li.item-2 path {fill: rgba(129, 129, 129, 1);}#qx-social-icon-6qjhg li.item-2 svg {width: 30px;}</style></li><li class="item-3"><a class="qx-icon" href="#" aria-label="Visit the following links for more" target="_self" rel="follow"><img data-src="https://www.themexpert.com/media/quixnxt/storage/icons/qxif-youtube.svg" alt="qxif-youtube" class="qx-preserve" qx-svg=""></a><style type="text/css">#qx-social-icon-6qjhg li.item-3 img{width:30px;height:30px;} #qx-social-icon-6qjhg li.item-3 i {color: rgba(129, 129, 129, 1);font-size: 30px;}#qx-social-icon-6qjhg li.item-3 polygon,#qx-social-icon-6qjhg li.item-3 path {fill: rgba(129, 129, 129, 1);}#qx-social-icon-6qjhg li.item-3 svg {width: 30px;}</style></li></ul></div></div></div> </div> </div> </div></div></div><div id="qx-row-sgjs2" class="qx-row-wrap lazyload"><div class="qx-row"> <div class="qx-background-overlay qx-row-sgjs2-background-overlay"></div> <div id="qx-column-xjlfy" class="qx-column"> <div class="qx-col-wrap lazyload"> <div class="qx-background-overlay qx-column-xjlfy-background-overlay"></div> <div class="qx-elements-wrap"> <div class="qx-element-wrap"> <div id="qx-image-w4sca" class="qx-element qx-element-image-v2"> <img data-src="https://www.themexpert.com/images/logo-white.svg" alt="icon-alt" class="qx-preserve" qx-svg=""> <style type="text/css">#qx-image-w4sca img{width:160px;height:160px;} #qx-image-w4sca i {color: ;font-size: 160px;}#qx-image-w4sca polygon,#qx-image-w4sca path {fill: ;}#qx-image-w4sca svg {width: 160px;}</style> </div></div><div class="qx-element-wrap"> <div id="qx-text-8zicq" class="qx-element qx-element-text-v2"> <p>Joomla!&reg; name is used under a limited license from Open Source Matters in the United States and other countries. ThemeXpert.com is not affiliated with or endorsed by Open Source Matters or the Joomla! Project.</p> </div></div> </div> </div> </div></div></div></div></section></div></div>	<script>
+		jQuery.fn.extend({
+          toggleText: function(a, b){
+
+              if(this.text() == b && b == a){
+                  this.hidden();
+              }else{
+                  this.show();
+                  return this.text(this.text() == b ? a : b);
+              }
+          }
+      });
+	</script></body>
+</html>

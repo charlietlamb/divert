@@ -3,6 +3,7 @@ import FAQ from "@/components/faq/FAQ";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import Journey from "@/components/journey/Journey";
+import Klav from "@/components/klav/Klav";
 import Reasons from "@/components/reasons/Reasons";
 import Results from "@/components/results/Results";
 import Rocket from "@/components/rocket/Rocket";
@@ -10,6 +11,7 @@ import Story from "@/components/story/Story";
 import Team from "@/components/team/Team";
 import Tech from "@/components/tech/Tech";
 import Test from "@/components/test/Test";
+import Track from "@/components/track/Track";
 import Upwork from "@/components/upwork/Upwork";
 
 export default function Home() {
@@ -22,6 +24,8 @@ export default function Home() {
       <Journey />
       <ClientDouble index={2} className="hidden md:flex" />
       <Results />
+      <Klav />
+      <Track />
       <Tech />
       <Rocket />
       {/* <Test /> */}

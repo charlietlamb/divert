@@ -9,8 +9,11 @@ import { TestDataType } from "../test/data/TestDataType";
 import Image from "next/image";
 import { UpworkDataType } from "./data/UpworkDataType";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function UpworkDialog({ data }: { data: UpworkDataType }) {
+  const router = useRouter();
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -28,9 +31,21 @@ export default function UpworkDialog({ data }: { data: UpworkDataType }) {
             objectPosition={data.thumbnailPosition || "center"}
           />
           <div className="absolute inset-0 hidden bg-black/50 transition group-hover:flex" />
-          <h4 className="absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 text-center text-xl font-medium text-white transition group-hover:flex">
-            {data.title}
-          </h4>
+          <div className="absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-2 text-center text-xl font-medium text-white transition group-hover:flex">
+            <h4 className="">{data.title}</h4>
+            {typeof data.link === "string" && (
+              <Button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  router.push(data.link);
+                }}
+                variant="slate_primary"
+                className="border-slate-200 bg-slate-100"
+              >
+                View Site
+              </Button>
+            )}
+          </div>
         </motion.div>
       </DialogTrigger>
       <DialogContent className="flex max-h-[90vh] max-w-[80%] flex-col overflow-hidden overflow-y-auto bg-slate-950">

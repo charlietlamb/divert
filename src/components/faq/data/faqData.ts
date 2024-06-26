@@ -10,7 +10,7 @@ Regardless of outcome, we will still provide you with actionable insights to inc
     question: "How do I know this will work for me?",
     answer: `You Don't.
 Neither do we.
-But if you are an ecom company with a low CVR and a low ROAS, then lets have a call and see if we can help. If we don’t think we can help then we go our separate ways, if we do think we can help, we fix your low conversions and AOV issues for good.
+But if you are an ecom company with a low CVR and a low AOV, then lets have a call and see if we can help. If we don’t think we can help then we go our separate ways, if we do think we can help, we fix your low conversions and AOV issues for good.
 (seems like a fair deal to me)`,
   },
   {
