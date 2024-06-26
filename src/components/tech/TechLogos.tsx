@@ -1,5 +1,5 @@
 import { SiNextdotjs } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaShopify } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import { FaMeta } from "react-icons/fa6";
@@ -12,6 +12,7 @@ export default function TechLogos() {
   const logoClassName = "min-w-12 min-h-12 text-slate-200";
   return (
     <div className="flex gap-4">
+      <FaShopify className={logoClassName} />
       <SiNextdotjs className={logoClassName} />
       <FaReact className={logoClassName} />
       <SiTailwindcss className={logoClassName} />

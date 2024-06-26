@@ -13,17 +13,6 @@ export default function HeroVideo() {
       viewport={{ amount: "some" }}
       className="relative flex w-full justify-center overflow-hidden rounded-lg sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%]"
     >
-      {/* <motion.video
-        controls
-        preload="none"
-        className=" w-full rounded-md text-slate-200 sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
-        src="vsl.mp4"
-        poster="thumbnail.jpg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-      </motion.video> */}
       <Vimeo
         video="950759145"
         autoplay
@@ -34,9 +23,23 @@ export default function HeroVideo() {
         className="relative z-10 w-full min-w-full rounded-lg"
         color="#e4e4e7"
         // controls={false}
+        background={false}
         volume={1}
       />
-      <div className="absolute inset-0">
+      {/* <ReactPlayer
+        url="https://vimeo.com/950759145"
+        playing
+        controls
+        config={{}}
+        width="100%"
+        height="auto"
+        style={{
+          minWidth: "100%",
+          maxWidth: "100%",
+          flexGrow: 1,
+        }}
+      /> */}
+      {/* <div className="absolute inset-0">
         <Image
           src="/thumbnail.jpg"
           alt="Divert Marketing Thumbnail"
@@ -45,7 +48,7 @@ export default function HeroVideo() {
           objectPosition="center"
           className="w-full min-w-full"
         ></Image>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

@@ -113,3 +113,10 @@ html {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
+
+.player,
+.player,
+.player {
+  height: "auto";
+  max-width: "none";
+}
