@@ -35,7 +35,7 @@ export default function Track() {
       </motion.h2>
       <TrackContent />
       <div className="flex gap-1 text-lg font-medium">
-        Book your
+        (Book your
         <p
           onClick={() => {
             const div = document.getElementById("calendar");
@@ -45,7 +45,7 @@ export default function Track() {
         >
           Scale Session
         </p>
-        to see our full tacking system.
+        to see our full Tracking System)
       </div>
     </div>
   );
