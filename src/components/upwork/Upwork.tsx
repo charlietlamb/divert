@@ -27,15 +27,27 @@ export default function Upwork() {
       >
         Our previous work.
       </motion.p>
-      <motion.h2
-        className="title-width title-size relative z-10 text-center text-6xl font-bold text-slate-200"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        Case Studies
-      </motion.h2>
+      <div className="flex w-full flex-col items-center gap-2">
+        <motion.h2
+          className="title-width title-size relative z-10 text-center text-6xl font-bold text-slate-200"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          Case Studies
+        </motion.h2>
+        <motion.p
+          className="title-width font-medium text-blue-300"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          we also design, click ‘view website’ to see the site built from
+          scratch
+        </motion.p>
+      </div>
       <motion.div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-3">
         {upworkData.map((data: UpworkDataType) => (
           <UpworkDialog data={data} key={data.title} />

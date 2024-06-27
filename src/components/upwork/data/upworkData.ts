@@ -18,7 +18,7 @@ export const upworkData = [
       },
     ],
     col: false,
-    thumbnailPosition: "1/3",
+    thumbnailPosition: "33%",
     link: "https://www.gallinee.com",
   },
   {

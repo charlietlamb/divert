@@ -4,10 +4,15 @@ export default function StoryText() {
       I learnt how to build websites from a young age and decided to start
       working as a freelancer. During this time I built over 25 websites, both
       B2B & B2C. After 6 months, as a freelancer I worked with an ecommerce
-      client who had a very unique colour scheme. Pink and Yellow. Not the first
-      pairing that springs to mind but to be fair, the site looked brilliant.
-      Many of their customers commented on the website’s aesthetics and I even
-      ended up getting a handful of referrals.
+      client who had a very unique colour scheme.
+      <br />
+      <br />
+      Pink and Yellow.
+      <br />
+      <br />
+      Not the first pairing that springs to mind but to be fair, the site looked
+      brilliant. Many of their customers commented on the website’s aesthetics
+      and I even ended up getting a handful of referrals.
       <br />
       <br />
       The problem was the site’s CVR was not high enough to be able to scale.
@@ -23,9 +28,11 @@ export default function StoryText() {
       Agency. To begin with, we focused on paid traffic and CRO before honing in
       on solely Conversion Rate Optimisation. With 5 members of staff and
       counting we are currently working with a number of e-commerce companies,
-      helping them to increase their CVR and AOV at scale. We would love to have
-      a 30-minute consultation with you guys to discuss how we can help you do
-      the same.
+      helping them to increase their CVR and AOV at scale.
+      <br />
+      <br />
+      We would love to have a 30-minute consultation with you guys to discuss
+      how we can help you do the same.
     </p>
   );
 }

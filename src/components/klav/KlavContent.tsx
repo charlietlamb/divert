@@ -17,13 +17,13 @@ export default function KlavContent() {
         <div className="text-4xl font-bold">
           The Key To Post Purchase Marketing
         </div>
-        <div className="flex gap-1 text-lg">
-          <ArrowUp />
-          automation <ArrowUp />
+        <div className="flex items-center gap-1 pb-2 text-lg">
+          <ArrowUp className="text-green-500" />
+          automation <ArrowUp className="text-green-500" />
           personalization
         </div>
         <p className="text-md text-slate-300">
-          We integrate klaviyo into your site and then consult you 1 on 1 on the
+          We integrate Klaviyo into your site and then consult you 1:1 on the
           best practices.
         </p>
       </div>

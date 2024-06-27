@@ -5,7 +5,7 @@ export default function StoryProfile() {
     <div className="flex items-center gap-4">
       <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-slate-100 md:h-32 md:w-32">
         <Image
-          src={"/images/george.jpg"}
+          src={"/images/george-blue.jpg"}
           alt={"George Wall Divert Marketing"}
           layout="fill"
           objectFit="cover"

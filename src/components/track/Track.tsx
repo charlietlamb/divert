@@ -4,6 +4,7 @@ import { mainClass } from "@/data/mainClass";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import TrackContent from "./TrackContent";
+import { Button } from "../ui/button";
 
 export default function Track() {
   return (
@@ -33,6 +34,19 @@ export default function Track() {
         Never play the guessing game again
       </motion.h2>
       <TrackContent />
+      <div className="flex gap-1 text-lg font-medium">
+        Book your
+        <p
+          onClick={() => {
+            const div = document.getElementById("calendar");
+            if (div) div.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="cursor-pointer underline"
+        >
+          Scale Session
+        </p>
+        to see our full tacking system.
+      </div>
     </div>
   );
 }
