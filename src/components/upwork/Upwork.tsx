@@ -44,8 +44,8 @@ export default function Upwork() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          (we also design, click ‘view site' to see the websites we built from
-          scratch)
+          (we also design, click &apos;view site&apos; to see the websites we
+          built from scratch)
         </motion.p>
       </div>
       <motion.div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-3">
