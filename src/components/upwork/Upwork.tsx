@@ -38,7 +38,7 @@ export default function Upwork() {
           Case Studies
         </motion.h2>
         <motion.p
-          className="title-width font-medium text-blue-300"
+          className="title-width flex items-center text-center font-medium text-blue-300"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}

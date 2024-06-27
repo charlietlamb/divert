@@ -34,18 +34,20 @@ export default function Track() {
         Never play the guessing game again
       </motion.h2>
       <TrackContent />
-      <div className="flex gap-1 text-lg font-medium">
-        (Book your
-        <p
-          onClick={() => {
-            const div = document.getElementById("calendar");
-            if (div) div.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer underline"
-        >
-          Scale Session
-        </p>
-        to see our full Tracking System)
+      <div className="flex-col items-center gap-1 text-lg font-medium sm:inline-flex sm:flex-row">
+        <div className="flex justify-center gap-1">
+          <p className="text-center">(Book your</p>
+          <p
+            onClick={() => {
+              const div = document.getElementById("calendar");
+              if (div) div.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="cursor-pointer text-center underline"
+          >
+            Scale Session
+          </p>
+        </div>
+        <p className="text-center">to see our full Tracking System)</p>
       </div>
     </div>
   );
