@@ -27,12 +27,13 @@ export default function HeroVideo() {
       /> */}
       <MuxPlayer
         streamType="on-demand"
-        playbackId="pNnVdHi6tbMQgCFI3BimkTpvHPTlvHogEkL801llTQU00"
-        metadataVideoTitle="Placeholder (optional)"
-        metadataViewerUserId="Placeholder (optional)"
+        playbackId="qtI2Gqv67n1aQeIqaHacjuRRAzTEFGT7fi6SmZ4u93w"
+        metadataVideoTitle="Divert Marketing Video"
+        metadataViewerUserId="Divert Marketing"
         primaryColor="#e4e4e7"
         secondaryColor="#0F172A"
         autoPlay
+        poster="/images/vsl-thumbnail.jpg"
         className="relative z-10 w-full min-w-full rounded-lg"
         style={{ "--media-accent-color": "#3B82F6" } as React.CSSProperties}
         minResolution="480p"
