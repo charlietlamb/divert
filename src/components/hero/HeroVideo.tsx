@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Vimeo from "@u-wave/react-vimeo";
-import Image from "next/image";
+import MuxPlayer from "@mux/mux-player-react";
 
 export default function HeroVideo() {
   return (
@@ -13,7 +12,7 @@ export default function HeroVideo() {
       viewport={{ amount: "some" }}
       className="relative flex w-full justify-center overflow-hidden rounded-lg sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%]"
     >
-      <Vimeo
+      {/* <Vimeo
         video="950759145"
         autoplay
         showTitle={false}
@@ -25,6 +24,18 @@ export default function HeroVideo() {
         // controls={false}
         background={false}
         volume={1}
+      /> */}
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId="pNnVdHi6tbMQgCFI3BimkTpvHPTlvHogEkL801llTQU00"
+        metadataVideoTitle="Placeholder (optional)"
+        metadataViewerUserId="Placeholder (optional)"
+        primaryColor="#e4e4e7"
+        secondaryColor="#0F172A"
+        autoPlay
+        className="relative z-10 w-full min-w-full rounded-lg"
+        style={{ "--media-accent-color": "#3B82F6" } as React.CSSProperties}
+        minResolution="480p"
       />
       {/* <ReactPlayer
         url="https://vimeo.com/950759145"

@@ -114,9 +114,6 @@ html {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-.player,
-.player,
-.player {
-  height: "auto";
-  max-width: "none";
+.mux-player {
+  --controls: none, --media-accent-color: "#e4e4e7";
 }

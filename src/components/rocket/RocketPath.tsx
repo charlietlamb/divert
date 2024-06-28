@@ -24,7 +24,6 @@ export default function RocketPath({
         Math.PI;
       if (p === 1) angle = 90;
       setEndPoint({ x: point.x, y: point.y, angle });
-      console.log(point.x, point.y);
     }
   }, [p]);
 

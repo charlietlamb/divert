@@ -22,7 +22,6 @@ export default function RocketRocket() {
       setY(getYValue(value, ref));
       setX(getXValue(value, ref));
       setP(value);
-      console.log(value);
     });
 
     return () => {
