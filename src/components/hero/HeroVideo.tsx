@@ -35,7 +35,13 @@ export default function HeroVideo() {
         autoPlay
         poster="/images/vsl-thumbnail.jpg"
         className="relative z-10 w-full min-w-full rounded-lg"
-        style={{ "--media-accent-color": "#3B82F6" } as React.CSSProperties}
+        style={
+          {
+            "--media-accent-color": "#3B82F6",
+            "--seek-backward-button": "none",
+            "--seek-forward-button": "none",
+          } as React.CSSProperties
+        }
         minResolution="480p"
       />
       {/* <ReactPlayer
