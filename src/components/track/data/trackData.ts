@@ -12,7 +12,7 @@ export const trackData = [
   },
   {
     title: "Session by session data",
-    text: "Individual session by session data allows us to see exactly what a prospect sees whilst on your site. When you analyse 1000+ individual sessions it becomes apparent what needs to be iterated or removed completely.",
+    text: "Individual Session by Session Data allows us to see exactly what a prospect sees whilst on your site. When you analyse 1000+ individual sessions it becomes apparent what needs to be iterated or removed completely.",
     image: "/images/phone.jpg",
   },
 ];
