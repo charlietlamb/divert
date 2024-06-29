@@ -11,7 +11,7 @@ export const trackData = [
       "https://www.smartlook.com/blog/wp-content/uploads/sites/2/2022/02/how-to-read-a-heatmap-1-1024x592.jpg",
   },
   {
-    title: "Session by session data",
+    title: "Session By Session Data",
     text: "Individual Session by Session Data allows us to see exactly what a prospect sees whilst on your site. When you analyse 1000+ individual sessions it becomes apparent what needs to be iterated or removed completely.",
     image: "/images/phone.jpg",
   },
