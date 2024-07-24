@@ -6,7 +6,7 @@ import { mainClass } from "@/data/mainClass";
 import Calendar from "../calendar/Calendar";
 import HeroTestimonials from "./HeroTestimonials";
 
-export default function Hero() {
+export default function Hero({ mode = null }: { mode?: string | null }) {
   return (
     <>
       <div
@@ -24,7 +24,7 @@ export default function Hero() {
             mainClass,
           )}
         >
-          <HeroTop />
+          <HeroTop mode={mode} />
           <HeroVideo />
           <HeroTestimonials />
         </div>
