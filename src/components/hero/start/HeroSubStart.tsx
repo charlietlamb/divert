@@ -10,14 +10,14 @@ export default function HeroSubStart() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
     >
-      Without any{" "}
+      With{" "}
       <span className="relative">
         <span className="relative z-10">
-          design
+          zero
           <Underline2 className="absolute bottom-0 left-0 w-full max-w-full" />
         </span>
       </span>{" "}
-      limitations.
+      design limitations.
     </motion.h3>
   );
 }
