@@ -84,7 +84,7 @@
 }
 
 .title-size-small {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  @apply text-xl sm:text-3xl md:text-4xl lg:text-5xl;
 }
 
 #onetrust-consent-sdk,
