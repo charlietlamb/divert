@@ -72,7 +72,7 @@ export const upworkData = [
     content: [
       {
         subheading: "$800k & 267% increase in AOV, in 3 Months",
-        desc: `More proof is that increasing revenue does NOT mean you need more site traffic. $6,851 => $11,715 in a Month with only a 2% increase in traffic. This is a clothing company. The first thing we did was remove the friction in the customer journey. Previously, customers clicked from the ad to the home page, then the collection page, product page, add to cart and checkout. Instead, we diverted traffic from the ad straight to a landing page that precisely matched the ad angle. From there, customers were driven straight to checkout.`,
+        desc: `Average Order Value increased by 267% in 3 Months. Going from $31 to $84, whilst adding almost 800k in revenue, in only 3 Months. This is a company that exclusively sells phone cases. The 3 questions people usually ask when buying a phone case: Does it look good? Does it protect my phone to the standard I require? Is it durable? The main switch here is to educate not sell. When you create a story ACTUALLY explaining how you get visitors from where they are to where they want to be, you can bundle your products together and create tailored solutions.`,
       },
     ],
     col: false,
